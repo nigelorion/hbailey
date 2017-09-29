@@ -1,13 +1,21 @@
 <template>
   <div id="app">
     <nav>
-      <a href="#">home</a>
+      <!-- <a href="#">home</a>
       <a href="#">gallery</a>
       <a href="#">story</a>
       <a href="#">terms</a>
-      <a href="#">contact</a>
+      <a href="#">contact</a> -->
+      <router-link to="/">home</router-link>
+      <router-link to="/gallery">gallery</router-link>
+      <router-link to="/story">story</router-link>
+      <router-link to="/terms">terms</router-link>
+      <router-link to="/contact">contact</router-link>
+
     </nav>
-    <router-view></router-view>
+    <transition name="fade" mode="out-in" v-on:after-enter="afterEnter" appear>
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -35,8 +43,19 @@ export default {
 
 nav {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  
+  top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>
