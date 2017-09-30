@@ -1,4 +1,5 @@
 <template>
+
   <div id="app">
     <nav>
       <transition name="fade2">
@@ -14,57 +15,52 @@
         <button v-if="!show" class="menuBtn" v-on:click="show=!show" type="button" name="button">&#9776;</button>
         <button v-if="show" v-on:click="show=!show" class="menuBtn close" type="button" name="button">&#x2715;</button>
       </transition>
-
-
     </nav>
     <transition name="fade" mode="out-in" v-on:after-enter="afterEnter" appear>
       <router-view></router-view>
     </transition>
   </div>
+
 </template>
 
 <script>
+
 export default {
   name: 'app',
   data () {
     return {
       show: false
-
     }
   }
 }
+
 </script>
 
 <style lang="scss">
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Crimson Text', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   color: #2c3e50;
-
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
   margin: 0;
-  // background-image: url(./assets/goodarts.jpg);
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-
-
 }
 
 body {
   margin: 0;
 }
+
 nav {
   position: absolute;
   top: 0px;
   left: 0px;
-
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -78,29 +74,20 @@ nav {
     justify-content: flex-start;
     height: 50px;
     width: 100%;
-
   }
-
-
-
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
   height: 400px;
-
   @media (max-width: 768px) {
     flex-direction: row;
-
     width: 100vw;
     height: 50px;
     justify-content: center;
     margin-top: 10px;
-
-
   }
 }
 
@@ -109,12 +96,10 @@ nav {
   text-decoration: none;
   font-size: 1.3em;
   transition: all 400ms;
-
   font-weight: normal;
   &:hover {
     color: rgb(65, 65, 65);
     margin-left: 12px;
-
   }
   @media (max-width: 768px) {
     font-size: 1.1em;
@@ -124,14 +109,6 @@ nav {
       margin-left: 0%;
     }
   }
-
-}
-
-
-
-router-link {
-  color: black;
-
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -149,7 +126,6 @@ router-link {
 .fade2-enter, .fade2-leave-active {
   opacity: 0
 }
-
 
 .menuBtn {
   position: absolute;
@@ -173,9 +149,7 @@ router-link {
   }
   @media (max-width: 768px) {
     top: 30px;
-
   }
-
 }
 
 </style>

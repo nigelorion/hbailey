@@ -49,7 +49,7 @@ img {
   flex-shrink: 1;
   padding: 100px;
   @media (max-width: 768px) {
-    margin-top: 300px;
+    margin-top: 500px;
 
   }
 }

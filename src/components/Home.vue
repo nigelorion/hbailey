@@ -1,4 +1,5 @@
 <template>
+
   <div class="main">
     <div class="left">
       <h1>{{ title }}</h1>
@@ -9,14 +10,12 @@
       <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img src="../assets/facebook.png" alt=""></a>
       <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img src="../assets/insta.png" alt=""></a>
     </div>
-
-
-
   </div>
 
 </template>
 
 <script>
+
 export default {
   name: 'main',
   data () {
@@ -27,8 +26,8 @@ export default {
     }
   }
 }
-</script>
 
+</script>
 
 <style lang="scss" scoped>
 
@@ -36,9 +35,7 @@ export default {
   display: flex;
   @media (max-width: 768px) {
   flex-direction: column;
-
-}
-
+  }
 }
 
 .left, .right {
@@ -57,6 +54,7 @@ export default {
     padding: 0px;
   }
 }
+
 h1, h3, p {
   font-weight: normal;
   transition: all 300ms;
@@ -64,6 +62,10 @@ h1, h3, p {
   &:hover {
     color: rgb(215, 215, 215);
   }
+}
+
+h1 {
+  font-size: 3em;
 }
 
 img {
@@ -74,13 +76,11 @@ img {
   @media (max-width: 768px) {
     height: 30px;
     margin: 10px;
-
   }
   &:hover {
     filter: opacity(.8);
     transform: scale(1.1);
   }
 }
-
 
 </style>
