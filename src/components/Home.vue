@@ -47,13 +47,14 @@ export default {
 
 .right {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
   @media (max-width: 768px) {
     flex-direction: row;
     justify-content: flex-start;
+    padding: 0px;
   }
 }
 h1, h3, p {
@@ -70,6 +71,11 @@ img {
   filter: opacity(.4);
   transition: all 200ms;
   margin: 5px;
+  @media (max-width: 768px) {
+    height: 30px;
+    margin: 10px;
+
+  }
   &:hover {
     filter: opacity(.8);
     transform: scale(1.1);

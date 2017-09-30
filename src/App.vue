@@ -169,7 +169,7 @@ router-link {
     filter: opacity(.7);
   }
   @media (max-width: 768px) {
-    top: 3px;
+    top: 30px;
     left: 3px;
   }
 
