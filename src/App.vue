@@ -62,8 +62,8 @@ body {
 }
 nav {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
 
   display: flex;
   justify-content: space-around;
@@ -71,6 +71,8 @@ nav {
   height: 100vh;
   background-color: white;
   z-index: 99;
+  width: 100px;
+  padding: 20px;
   @media (max-width: 768px) {
     flex-direction: row;
     justify-content: flex-start;
@@ -92,10 +94,11 @@ nav {
 
   @media (max-width: 768px) {
     flex-direction: row;
-    margin-top: 30px;
+
     width: 100vw;
     height: 50px;
     justify-content: center;
+    margin-top: 10px;
 
 
   }
@@ -151,7 +154,7 @@ router-link {
 .menuBtn {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 20px;
   border: none;
   background: none;
   font-size: 2em;
@@ -170,7 +173,7 @@ router-link {
   }
   @media (max-width: 768px) {
     top: 30px;
-    left: 3px;
+
   }
 
 }
