@@ -1,19 +1,20 @@
 <template>
   <div id="app">
     <nav>
-      <!-- <a href="#">home</a>
-      <a href="#">gallery</a>
-      <a href="#">story</a>
-      <a href="#">terms</a>
-      <a href="#">contact</a> -->
-      <button class="menuBtn" v-on:click="show=!show" type="button" name="button">menu</button>
-      <div class="wrapper" v-if="show">
-        <router-link class='links' to="/">home</router-link>
-        <router-link class='links' to="/gallery">gallery</router-link>
-        <router-link class='links' to="/story">story</router-link>
-        <router-link class='links' to="/terms">terms</router-link>
-        <router-link class='links' to="/contact">contact</router-link>
-      </div>
+      <transition name="fade2">
+        <div class="wrapper" v-if="show">
+          <router-link class='links' to="/">home</router-link>
+          <router-link class='links' to="/gallery">gallery</router-link>
+          <router-link class='links' to="/story">story</router-link>
+          <router-link class='links' to="/terms">terms</router-link>
+          <router-link class='links' to="/contact">contact</router-link>
+        </div>
+      </transition>
+      <transition name="fade" mode="out-in" v-on:after-enter="afterEnter" appear>
+        <button v-if="!show" class="menuBtn" v-on:click="show=!show" type="button" name="button">&#9776;</button>
+        <button v-if="show" v-on:click="show=!show" class="menuBtn close" type="button" name="button">&#x2715;</button>
+      </transition>
+
 
     </nav>
     <transition name="fade" mode="out-in" v-on:after-enter="afterEnter" appear>
@@ -48,6 +49,12 @@ export default {
   height: 100vh;
   width: 100vw;
   margin: 0;
+  // background-image: url(./assets/goodarts.jpg);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+
 }
 
 body {
@@ -55,13 +62,23 @@ body {
 }
 nav {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 20px;
+  left: 20px;
 
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   height: 100vh;
+  background-color: white;
+  z-index: 99;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 50px;
+    width: 100%;
+
+  }
+
 
 
 }
@@ -72,20 +89,39 @@ nav {
   justify-content: space-around;
 
   height: 400px;
-  padding: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    margin-top: 30px;
+    width: 100vw;
+    height: 50px;
+    justify-content: center;
+
+
+  }
 }
 
 .links {
   color: rgb(158, 156, 156);
   text-decoration: none;
-  font-size: 1.5em;
-  transition: all 200ms;
-  border: solid 1px white;
+  font-size: 1.3em;
+  transition: all 400ms;
+
+  font-weight: normal;
   &:hover {
-    color: rgb(194, 140, 135);
-    margin-left: 7px;
-    transform: scale(1.1);
+    color: rgb(65, 65, 65);
+    margin-left: 12px;
+
   }
+  @media (max-width: 768px) {
+    font-size: 1.1em;
+    margin: 2%;
+    &:hover {
+      margin-top: 3%;
+      margin-left: 0%;
+    }
+  }
+
 }
 
 
@@ -103,9 +139,40 @@ router-link {
   opacity: 0
 }
 
+.fade2-enter-active, .fade2-leave-active {
+  transition: opacity 0.6s
+}
+
+.fade2-enter, .fade2-leave-active {
+  opacity: 0
+}
+
+
 .menuBtn {
   position: absolute;
   top: 10px;
   left: 10px;
+  border: none;
+  background: none;
+  font-size: 2em;
+  transition: all 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  filter: opacity(.3);
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    filter: opacity(.7);
+  }
+  @media (max-width: 768px) {
+    top: 3px;
+    left: 3px;
+  }
+
 }
+
 </style>

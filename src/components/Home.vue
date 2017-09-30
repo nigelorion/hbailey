@@ -34,6 +34,11 @@ export default {
 
 .main {
   display: flex;
+  @media (max-width: 768px) {
+  flex-direction: column;
+
+}
+
 }
 
 .left, .right {
@@ -46,6 +51,10 @@ export default {
   align-items: center;
   flex-direction: column;
   padding: 10px;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 h1, h3, p {
   font-weight: normal;
