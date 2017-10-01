@@ -20,9 +20,9 @@ export default {
   name: 'main',
   data () {
     return {
-      title: 'h.bailey',
+      title: 'H.Bailey',
       header: 'CURATED RESALE',
-      subHeader: "men's wear for all."
+      subHeader: 'menswear for all'
     }
   }
 }
@@ -36,6 +36,8 @@ export default {
   @media (max-width: 768px) {
   flex-direction: column;
   }
+
+
 }
 
 .left, .right {
@@ -66,6 +68,11 @@ h1, h3, p {
 
 h1 {
   font-size: 3em;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0px;
 }
 
 img {
