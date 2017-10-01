@@ -42,6 +42,8 @@ export default {
 
 .left, .right {
   width: 200px;
+  text-align: center;
+
 }
 
 .right {
@@ -73,8 +75,23 @@ h1 {
 
 h3 {
   margin-top: 0px;
+  margin-bottom: 2px;
+  letter-spacing: 2px;
+  font-size: 1.3;
 }
 
+p {
+  font-size: 1.1em;
+
+
+
+
+
+}
+
+.left {
+  border: solid 1px black;
+}
 img {
   height: 20px;
   filter: opacity(.4);
