@@ -11,12 +11,12 @@
           <router-link class='links' to="/contact">contact</router-link>
         </div>
       </transition>
-      <transition name="fade" mode="out-in" v-on:after-enter="afterEnter" appear>
+      <transition name="fade" mode="out-in" appear>
         <button v-if="!show" class="menuBtn" v-on:click="show=!show" type="button" name="button">&#9776;</button>
         <button v-if="show" v-on:click="show=!show" class="menuBtn close" type="button" name="button">&#x2715;</button>
       </transition>
     </nav>
-    <transition name="fade" mode="out-in" v-on:after-enter="afterEnter" appear>
+    <transition name="fade" mode="out-in" appear>
       <router-view></router-view>
     </transition>
   </div>
@@ -51,7 +51,10 @@ export default {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  padding-top: 5px;
+  @media (max-width: 768px) {
+    padding-top: 5%;
+  }
+
 
 }
 

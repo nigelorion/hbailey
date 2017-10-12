@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     startRotation: function () {
-      this.timer = setInterval(this.next, 3000)
+      this.timer = setInterval(this.next, 3500)
     },
     next: function () {
       this.currentImage++
