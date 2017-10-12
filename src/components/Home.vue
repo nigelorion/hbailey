@@ -5,12 +5,12 @@
       <h1>{{ title }}</h1>
       <h3>{{ header }}</h3>
       <p>{{ subHeader }}</p>
+      <!-- <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="../assets/facebook.png" alt=""></a>
+      <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="../assets/insta.png" alt=""></a> -->
     </div>
 
     <div class="right">
       <transition name="fade2" mode="out-in">
-      <!-- <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img src="../assets/facebook.png" alt=""></a>
-      <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img src="../assets/insta.png" alt=""></a> -->
         <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
       </transition>
     </div>
@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     startRotation: function () {
-      this.timer = setInterval(this.next, 3500)
+      this.timer = setInterval(this.next, 4200)
     },
     next: function () {
       this.currentImage++
@@ -55,42 +55,29 @@ export default {
   @media (max-width: 768px) {
   flex-direction: column;
   }
-
-
 }
 
 .left, .right {
-  padding: 3%;
+
+
   height: 250px;
   width: 250px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 10px;
-
+  padding: 10px;
   @media (max-width: 768px) {
     height: 230px;
     width: 230px;
-
-
   }
-
-
 }
 
 .right {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
-
-  border: solid 1px black;
+  border: solid 2px black;
+  // background-color: rgb(230, 213, 202);
   @media (max-width: 768px) {
-    // flex-direction: row;
-    // justify-content: flex-start;
-    // padding: 0px;
   }
 }
 
@@ -98,7 +85,6 @@ h1, h3, p {
   font-weight: normal;
   transition: all 300ms;
   margin: 0;
-
   &:hover {
     color: rgb(215, 215, 215);
   }
@@ -106,78 +92,55 @@ h1, h3, p {
 
 h1 {
   font-size: 3em;
-
   @media (max-width: 768px) {
-
-    // flex-direction: row;
-    // justify-content: flex-start;
-    // padding: 0px;
   }
 }
 
 h3 {
-
   letter-spacing: 2px;
   font-size: 1.3em;
   @media (max-width: 768px) {
     font-size: 1.1em;
-
-
-    // flex-direction: row;
-    // justify-content: flex-start;
-    // padding: 0px;
   }
 }
 
 p {
   font-size: 1.1em;
   @media (max-width: 768px) {
-    // flex-direction: row;
-    // justify-content: flex-start;
-    // padding: 0px;
   }
-
-
-
-
-
 }
 
 .left {
-  border: solid 1px black;
+  border: solid 2px black;
+
 }
-// img {
-//   height: 20px;
-//   filter: opacity(.4);
-//   transition: all 200ms;
-//   margin: 5px;
-//   @media (max-width: 768px) {
-//     height: 30px;
-//     margin: 10px;
-//   }
-//   &:hover {
-//     filter: opacity(.8);
-//     transform: scale(1.1);
-//   }
-// }
+
+.socialLinks {
+  height: 20px;
+  filter: opacity(.4);
+  transition: all 200ms;
+  margin: 5px;
+  @media (max-width: 768px) {
+    height: 30px;
+    margin: 10px;
+  }
+  &:hover {
+    filter: opacity(.8);
+    transform: scale(1.1);
+  }
+}
 
 .imgGallery {
   height: 100%;
   width: 100%;
-
-
-}
-
-img {
-
 }
 
 .fade2-enter-active, .fade2-leave-active {
-  transition: opacity 0.8s
+  transition: opacity 1s
 }
 
 .fade2-enter, .fade2-leave-active {
-  transition: opacity 0.8s
+  transition: opacity 1s
 }
 
 </style>

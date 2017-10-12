@@ -50,12 +50,12 @@ export default {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
   margin: 0;
   @media (max-width: 768px) {
     padding-top: 5%;
   }
-
-
 }
 
 body {
@@ -79,6 +79,7 @@ nav {
     justify-content: flex-start;
     height: 50px;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 
@@ -116,22 +117,6 @@ nav {
   }
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.4s
-}
-
-.fade-enter, .fade-leave-active {
-  opacity: 0
-}
-
-.fade2-enter-active, .fade2-leave-active {
-  transition: opacity 0.6s
-}
-
-.fade2-enter, .fade2-leave-active {
-  opacity: 0
-}
-
 .menuBtn {
   position: absolute;
   top: 10px;
@@ -155,6 +140,22 @@ nav {
   @media (max-width: 768px) {
     top: 30px;
   }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.4s
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+.fade2-enter-active, .fade2-leave-active {
+  transition: opacity 0.6s
+}
+
+.fade2-enter, .fade2-leave-active {
+  opacity: 0
 }
 
 </style>
