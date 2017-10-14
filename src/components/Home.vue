@@ -58,6 +58,7 @@ export default {
 }
 
 .left, .right {
+  border: solid 2px rgb(170, 146, 79);
 
 
   height: 250px;
@@ -75,7 +76,7 @@ export default {
 }
 
 .right {
-  border: solid 2px black;
+
   // background-color: rgb(230, 213, 202);
   @media (max-width: 768px) {
   }
@@ -111,7 +112,7 @@ p {
 }
 
 .left {
-  border: solid 2px black;
+
 
 }
 
