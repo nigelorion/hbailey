@@ -24,21 +24,9 @@ export default {
 <style lang="scss" scoped>
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-.mapContainer {
-  width: 70vw;
-  height: 70%;
-}
-
-.map {
-  display: block;
-  margin: 0 auto;
-}
 
 
 </style>
