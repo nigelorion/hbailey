@@ -58,7 +58,7 @@ export default {
 }
 
 .left, .right {
-  border: solid 2px rgb(170, 146, 79);
+  border: solid 2px rgb(103, 94, 68);
 
 
   height: 250px;

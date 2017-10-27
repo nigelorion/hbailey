@@ -95,7 +95,7 @@ nav {
 
   display: flex;
   justify-content: space-around;
-  width: 70%;
+  width: 60%;
   height: 40px;
   // flex-direction: column;
   // justify-content: space-around;
@@ -173,12 +173,12 @@ nav {
 
 }
 
-.main {
-  padding-top: 100px;
-  @media (max-width: 768px) {
-    padding-top: 220px;
-  }
-}
+// .main {
+//   padding-top: 100px;
+//   @media (max-width: 768px) {
+//     padding-top: 220px;
+//   }
+// }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.4s
