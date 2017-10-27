@@ -8,24 +8,20 @@
 
         <button v-on:click="currentImage--" type="button" name="button" class="btnLeft"><</button>
         <button v-on:click="currentImage++"type="button" name="button" class="btnRight">></button>
+        <div class="thumbnails">
+          <img v-on:click="thumbClick" id="0" class="thumb" :src="images[0]" alt="">
+          <img v-on:click="thumbClick" id="1" class="thumb" :src="images[1]" alt="">
+          <img v-on:click="thumbClick" id="2" class="thumb" :src="images[2]" alt="">
+          <img v-on:click="thumbClick" id="3" class="thumb" :src="images[3]" alt="">
+          <img v-on:click="thumbClick" id="4" class="thumb" :src="images[4]" alt="">
 
-
+        </div>
       </div>
       <div class="galleryRight">
         <transition name="fade2" mode="out-in">
           <p :key='currentImage' class="galleryText">"{{imageDetails[Math.abs(currentImage) % imageDetails.length]}}"</p>
-
         </transition>
-
-
-
-
       </div>
-
-      <!-- <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22046034_10155479723630795_6557431837921339062_n.jpg?oh=afb13b34a8d023e71fcee1bd78b0a856&oe=5A88214B" alt="">
-      <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22049865_10155482460010795_6342427858041865217_n.jpg?oh=6f391a4c98f1ae1ee8de13eac01c388e&oe=5A7EAEBE" alt="">
-      <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/21768055_10155474844855795_4143192661684090217_n.jpg?oh=2bed796e06a98fabe7ee4b3b56874a29&oe=5A3A3FCF" alt="">
-      <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22008023_10155467767510795_8813018744575320245_n.jpg?oh=454c11338a1c14e6925f48f4fee2e1d2&oe=5A4C5283" alt=""> -->
     </div>
   </div>
 </template>
@@ -41,8 +37,11 @@ export default {
     }
   },
   methods: {
-    next: function () {
-      this.currentImage++
+    thumbClick: function (val) {
+      let imageIndex = val.path[0].attributes[1].value
+      this.currentImage = imageIndex
+
+      console.log(imageIndex)
     }
   }
 }
@@ -127,6 +126,22 @@ img {
   right: 0;
   top: 0;
 
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+
+}
+
+.thumb {
+  height: 50px;
+  width: 50px;
+  margin: 1px;
+  filter: grayscale(80%);
+  &:hover {
+    filter: grayscale(0%);
+  }
 }
 
 // img {
