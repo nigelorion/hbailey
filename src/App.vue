@@ -72,15 +72,6 @@ nav {
   align-items: center;
   margin-top: 5%;
 
-  // left: 0px;
-  // display: flex;
-  // justify-content: space-around;
-  // flex-direction: column;
-  // height: 100vh;
-  // background-color: white;
-  // z-index: 99;
-  // width: 100px;
-  // padding: 20px;
 
   @media (max-width: 768px) {
     flex-direction: row;
@@ -121,7 +112,7 @@ nav {
     margin-top: 8px;
   }
   @media (max-width: 768px) {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 2%;
     &:hover {
       margin-top: 3%;
@@ -150,35 +141,7 @@ nav {
   transform: scaleX(1);
 }
 
-.menuBtn {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  border: none;
-  background: none;
-  font-size: 2em;
-  transition: all 200ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  filter: opacity(.3);
-  &:focus {
-    outline: 0;
-  }
-  &:hover {
-    filter: opacity(.7);
-  }
 
-}
-
-// .main {
-//   padding-top: 100px;
-//   @media (max-width: 768px) {
-//     padding-top: 220px;
-//   }
-// }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.4s

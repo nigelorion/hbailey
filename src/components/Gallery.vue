@@ -2,25 +2,26 @@
   <div class="main">
     <div class="gallery">
       <div class="galleryLeft">
+
         <transition name="fade2" mode="out-in">
           <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
         </transition>
 
-        <button v-on:click="currentImage--" type="button" name="button" class="btnLeft"><</button>
-        <button v-on:click="currentImage++"type="button" name="button" class="btnRight">></button>
-        <div class="thumbnails">
-          <img v-on:click="thumbClick" id="0" class="thumb" :src="images[0]" alt="">
-          <img v-on:click="thumbClick" id="1" class="thumb" :src="images[1]" alt="">
-          <img v-on:click="thumbClick" id="2" class="thumb" :src="images[2]" alt="">
-          <img v-on:click="thumbClick" id="3" class="thumb" :src="images[3]" alt="">
-          <img v-on:click="thumbClick" id="4" class="thumb" :src="images[4]" alt="">
+        <button v-on:click="currentImage--" type="button" name="button" class="btnLeft">&#9664;</button>
+        <button v-on:click="currentImage++"type="button" name="button" class="btnRight">&#9654;</button>
 
+        <div class="thumbnails">
+          <img v-for="(image, index) in images" v-on:click="thumbClick" :id="index" class="thumb" :src="images[index]" alt="">
         </div>
+
       </div>
+
       <div class="galleryRight">
+
         <transition name="fade2" mode="out-in">
           <p :key='currentImage' class="galleryText">"{{imageDetails[Math.abs(currentImage) % imageDetails.length]}}"</p>
         </transition>
+
       </div>
     </div>
   </div>
@@ -40,8 +41,6 @@ export default {
     thumbClick: function (val) {
       let imageIndex = val.path[0].attributes[1].value
       this.currentImage = imageIndex
-
-      console.log(imageIndex)
     }
   }
 }
@@ -53,7 +52,6 @@ export default {
   @media (max-width: 900px) {
     margin-top: 25%;
   }
-
 }
 
 .gallery {
@@ -61,7 +59,9 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @media (max-width: 900px) {
 
+  }
 }
 
 .galleryLeft, .galleryRight {
@@ -81,7 +81,10 @@ export default {
   align-items: center;
   text-align: center;
   justify-content: center;
+  @media (max-width: 900px) {
+    order: 0;
 
+  }
 }
 
 .galleryText {
@@ -96,7 +99,6 @@ img {
 
 .galleryLeft {
   position: relative;
-
 }
 
 .btnLeft, .btnRight {
@@ -104,34 +106,29 @@ img {
   outline: none;
   background: none;
   border: none;
-  color: white;
-  font-size: 3em;
+  color: rgba(255, 255, 255, 0.53);
+  font-size: 2em;
   height: 100%;
   transition: all 300ms ease-in-out;;
   &:hover {
-    background-color: rgba(131, 131, 131, 0.47);
-    color: rgb(201, 190, 111);
+    background-color: rgba(201, 201, 201, 0.47);
+    color: rgba(37, 37, 37, 0.82);
   }
-
-
 }
 
 .btnLeft {
   left: 0;
   top: 0;
-
 }
 
 .btnRight {
   right: 0;
   top: 0;
-
 }
 
 .thumbnails {
   display: flex;
   justify-content: center;
-
 }
 
 .thumb {
@@ -143,31 +140,5 @@ img {
     filter: grayscale(0%);
   }
 }
-
-// img {
-//   height: 300px;
-//   margin: 5px;
-//   transition: all 300ms;
-//   filter: grayscale(80%);
-//   @media (max-width: 840px) {
-//     height: 250px;
-//
-//   }
-// }
-
-// .gallery {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-wrap: wrap;
-//
-//
-//   // padding: 100px;
-//   @media (max-width: 768px) {
-//     // margin-top: 500px;
-//
-//   }
-// }
-
 
 </style>

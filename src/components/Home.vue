@@ -70,8 +70,8 @@ export default {
   margin: 10px;
   padding: 10px;
   @media (max-width: 768px) {
-    height: 230px;
-    width: 230px;
+    height: 210px;
+    width: 210px;
   }
 }
 
