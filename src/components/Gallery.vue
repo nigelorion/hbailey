@@ -1,5 +1,4 @@
-var VueTouch = require('vue-touch')
-Vue.use(VueTouch, {name: 'v-touch'})
+
 
 <template>
   <div class="main">
@@ -34,6 +33,7 @@ Vue.use(VueTouch, {name: 'v-touch'})
 </template>
 
 <script>
+
 export default {
   name: 'main',
   data () {
