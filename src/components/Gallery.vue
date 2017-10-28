@@ -4,7 +4,7 @@
   <div class="main">
     <div class="gallery">
       <div class="galleryLeft">
-        <v-touch v-on:swipeleft="currentImage--" v-on:swipeRight="currentImage++">
+        <v-touch v-on:swipeleft="currentImage--" v-on:swiperight="currentImage++">
           <transition name="fade2" mode="out-in">
             <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
           </transition>
@@ -76,8 +76,8 @@ export default {
   width: 400px;
   margin: 10px;
   @media (max-width: 900px) {
-    height: 300px;
-    width: 300px;
+    height: 320px;
+    width: 320px;
     margin: 5px;
   }
 }
