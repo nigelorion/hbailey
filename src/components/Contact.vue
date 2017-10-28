@@ -1,18 +1,22 @@
 <template>
   <div class="main">
-    <div class="mapContainer contain">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.1983975898875!2d-122.33630418400797!3d47.602831796230944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab00ce85a13%3A0x42b2cea88c1da9dd!2sGood+Arts+Building!5e0!3m2!1sen!2sus!4v1506739634885" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
-    </div>
-    <div class="contactContainer contain">
-      <p>{{ email }}</p>
-      <p>(123) 345 - 7891</p>
-      <div class="socialContainer">
-        <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="../assets/facebook.png" alt=""></a>
-        <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="../assets/insta.png" alt=""></a>
+    <div class="container">
 
+      <div class="contactContainer">
+
+        <div class="socialContainer">
+          <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="../assets/facebook.png" alt=""></a>
+          <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="../assets/insta.png" alt=""></a>
+
+        </div>
+
+      </div>
+      <div class="mapContainer contain">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.1983975898875!2d-122.33630418400797!3d47.602831796230944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab00ce85a13%3A0x42b2cea88c1da9dd!2sGood+Arts+Building!5e0!3m2!1sen!2sus!4v1506739634885" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
       </div>
 
     </div>
+
 
 
 
@@ -35,10 +39,14 @@ export default {
 .main {
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
+}
+.container {
+  height: 50%;
 }
 
 .socialLinks {
@@ -56,6 +64,12 @@ export default {
   }
 }
 
+
+.contain {
+  width: 350px;
+  height: 400px;
+}
+
 .socialContainer {
   margin-top: 10px;
 }
@@ -65,16 +79,10 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  @media (max-width: 768px) {
-    height: 200px;
-    justify-content: flex-start;
-  }
+  height: 100px;
+
 }
 
-.contain {
-  width: 350px;
-  height: 400px;
-}
 
 .map {
   height: 100%;
