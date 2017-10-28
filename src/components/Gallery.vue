@@ -1,3 +1,6 @@
+var VueTouch = require('vue-touch')
+Vue.use(VueTouch, {name: 'v-touch'})
+
 <template>
   <div class="main">
     <div class="gallery">
@@ -7,7 +10,7 @@
             <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
           </transition>
         </v-touch>
-        
+
 
         <button v-on:click="currentImage--" type="button" name="button" class="btnLeft">&#9664;</button>
         <button v-on:click="currentImage++"type="button" name="button" class="btnRight">&#9654;</button>
