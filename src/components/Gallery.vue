@@ -2,15 +2,18 @@
   <div class="main">
     <div class="gallery">
       <div class="galleryLeft">
-
-        <transition name="fade2" mode="out-in">
-          <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
-        </transition>
+        <v-touch v-on:swipeleft="currentImage--" v-on:swipeRight="currentImage++">
+          <transition name="fade2" mode="out-in">
+            <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
+          </transition>
+        </v-touch>
+        
 
         <button v-on:click="currentImage--" type="button" name="button" class="btnLeft">&#9664;</button>
         <button v-on:click="currentImage++"type="button" name="button" class="btnRight">&#9654;</button>
 
         <div class="thumbnails">
+
           <img v-for="(image, index) in images" v-on:click="thumbClick" :id="index" class="thumb" :src="images[index]" alt="">
         </div>
 
