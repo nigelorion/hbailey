@@ -16,7 +16,7 @@
 
         <div class="thumbnails">
 
-          <img v-for="(image, index) in images" v-on:click="thumbClick" :id="index" class="thumb" :src="images[index]" alt="">
+          <img v-for="(image, index) in images" v-on:click="thumbClick(index)" :id="index" class="thumb" :src="images[index]" alt="">
         </div>
 
       </div>
@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     thumbClick: function (val) {
-      let imageIndex = val.path[0].attributes[1].value
+      let imageIndex = val
       this.currentImage = imageIndex
     }
   }
@@ -88,7 +88,7 @@ export default {
   text-align: center;
   justify-content: center;
   @media (max-width: 900px) {
-    order: 0;
+    order: 1;
 
   }
 }
