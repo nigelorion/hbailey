@@ -5,8 +5,12 @@
       <h1>{{ title }}</h1>
       <h3>{{ header }}</h3>
       <p>{{ subHeader }}</p>
-      <!-- <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="../assets/facebook.png" alt=""></a>
-      <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="../assets/insta.png" alt=""></a> -->
+      <div class="socialContainer">
+        <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="../assets/facebook.png" alt=""></a>
+        <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="../assets/insta.png" alt=""></a>
+
+      </div>
+
     </div>
 
     <div class="right">
@@ -129,6 +133,10 @@ p {
     filter: opacity(.8);
     transform: scale(1.1);
   }
+}
+
+.socialContainer {
+  margin-top: 10px;
 }
 
 .imgGallery {
