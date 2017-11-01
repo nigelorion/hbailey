@@ -1,14 +1,20 @@
 <template>
 
   <div id="app">
+    <div class="socialContainer">
+      <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="./assets/facebook.png" alt=""></a>
+      <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="./assets/insta.png" alt=""></a>
+
+    </div>
+
     <nav>
       <transition name="fade2">
         <div class="wrapper" v-if="show">
-          <router-link class='links' to="/">home</router-link>
-          <router-link class='links' to="/gallery">gallery</router-link>
-          <router-link class='links' to="/story">story</router-link>
-          <router-link class='links' to="/terms">terms</router-link>
-          <router-link class='links' to="/contact">contact</router-link>
+          <router-link class='links' to="/">Home</router-link>
+          <router-link class='links' to="/gallery">Gallery</router-link>
+          <router-link class='links' to="/polices">Polices</router-link>
+          <!-- <router-link class='links' to="/terms">terms</router-link> -->
+          <router-link class='links' to="/contact">Contact</router-link>
         </div>
       </transition>
       <!-- <transition name="fade" mode="out-in" appear>
@@ -19,7 +25,15 @@
     <transition name="fade" mode="out-in" appear>
       <router-view></router-view>
     </transition>
+    <div class="socLinks">
+
+    </div>
+
+
   </div>
+
+
+
 
 </template>
 
@@ -55,6 +69,33 @@ export default {
   margin: 0;
   @media (max-width: 768px) {
     padding-top: 5%;
+  }
+  position: relative;
+}
+
+.socialContainer {
+  position: absolute;
+  bottom: 5%;
+
+  z-index: 100;
+  // background: rgba(194, 181, 112, 0.7);
+  border: solid 1px rgba(194, 181, 112, 0.7);
+  width: 100%;
+  text-align: center;
+}
+
+.socialLinks {
+  height: 25px;
+  filter: opacity(.6);
+  transition: all 200ms;
+  margin: 5px;
+  @media (max-width: 768px) {
+    height: 30px;
+    margin: 10px;
+  }
+  &:hover {
+    filter: opacity(.8);
+    transform: scale(1.1);
   }
 }
 

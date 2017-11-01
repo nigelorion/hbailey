@@ -5,11 +5,7 @@
       <h1>{{ title }}</h1>
       <h3>{{ header }}</h3>
       <p>{{ subHeader }}</p>
-      <div class="socialContainer">
-        <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="../assets/facebook.png" alt=""></a>
-        <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="../assets/insta.png" alt=""></a>
 
-      </div>
 
     </div>
 
@@ -62,7 +58,7 @@ export default {
 }
 
 .left, .right {
-  border: solid 2px rgb(103, 94, 68);
+  border: solid 2px rgb(191, 167, 112);
 
 
   height: 250px;

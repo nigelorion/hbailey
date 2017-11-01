@@ -3,8 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Gallery from '@/components/Gallery'
 import Contact from '@/components/Contact'
-import Terms from '@/components/Terms'
-import Story from '@/components/Story'
+import Polices from '@/components/Polices'
 
 Vue.use(Router)
 
@@ -21,14 +20,9 @@ export default new Router({
       component: Gallery
     },
     {
-      path: '/story',
-      name: 'story',
-      component: Story
-    },
-    {
-      path: '/terms',
-      name: 'terms',
-      component: Terms
+      path: '/polices',
+      name: 'polices',
+      component: Polices
     },
     {
       path: '/contact',
