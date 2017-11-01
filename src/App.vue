@@ -75,7 +75,7 @@ export default {
 
 .socialContainer {
   position: absolute;
-  bottom: 5%;
+  bottom: 20px;
 
   z-index: 100;
   // background: rgba(194, 181, 112, 0.7);
