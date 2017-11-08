@@ -4,7 +4,6 @@
   "description": "H.Bailey Resale",
   "author": "Nigel Orion <nigelorion@gmail.com>",
   "private": true,
-  "homepage": "http://www.hbailey.boutique",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
