@@ -1,39 +1,31 @@
 <template>
 
   <div id="app">
-    <div class="socialContainer">
-      <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="./assets/facebook.png" alt=""></a>
-      <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="./assets/insta.png" alt=""></a>
 
-    </div>
 
     <nav>
       <transition name="fade2">
         <div class="wrapper" v-if="show">
           <router-link class='links' to="/">Home</router-link>
           <router-link class='links' to="/gallery">Gallery</router-link>
-          <router-link class='links' to="/polices">Polices</router-link>
+          <router-link class='links' to="/polices">Policies</router-link>
           <!-- <router-link class='links' to="/terms">terms</router-link> -->
           <router-link class='links' to="/contact">Contact</router-link>
         </div>
       </transition>
-      <!-- <transition name="fade" mode="out-in" appear>
-        <button v-if="!show" class="menuBtn" v-on:click="show=!show" type="button" name="button">&#9776;</button>
-        <button v-if="show" v-on:click="show=!show" class="menuBtn close" type="button" name="button">&#x2715;</button>
-      </transition> -->
     </nav>
+
     <transition name="fade" mode="out-in" appear>
       <router-view></router-view>
     </transition>
-    <div class="socLinks">
 
-    </div>
-
+    <footer>
+      <p>H.Bailey 2017 &#169;</p>
+      <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="./assets/facebook.png" alt=""></a>
+      <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="./assets/insta.png" alt=""></a>
+    </footer>
 
   </div>
-
-
-
 
 </template>
 
@@ -54,35 +46,57 @@ export default {
 
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+
+
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
 #app {
   font-family: 'Crimson Text', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+
+  min-height: 100vh;
+
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0;
-  @media (max-width: 768px) {
-    padding-top: 5%;
-  }
-  position: relative;
+  flex-direction: column;
+
+
+
 }
 
-.socialContainer {
-  position: absolute;
-  bottom: 20px;
 
-  z-index: 100;
-  // background: rgba(194, 181, 112, 0.7);
-  border: solid 1px rgba(194, 181, 112, 0.7);
+
+
+
+footer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  text-align: center;
+  border-top: solid 1px rgb(191, 167, 112); 
+
 }
+
 
 .socialLinks {
   height: 25px;
@@ -99,19 +113,19 @@ export default {
   }
 }
 
-body {
-  margin: 0;
-}
+
 
 nav {
-  position: absolute;
-  top: 0px;
+
   width: 100%;
+  min-height: 100px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+
+  background-color: white;
+  z-index: 120;
 
 
   @media (max-width: 768px) {
@@ -124,14 +138,11 @@ nav {
 }
 
 .wrapper {
-
   display: flex;
   justify-content: space-around;
   width: 60%;
   height: 40px;
-  // flex-direction: column;
-  // justify-content: space-around;
-  // height: 400px;
+  background-color: white;
   @media (max-width: 768px) {
     flex-direction: row;
     width: 100vw;
@@ -181,8 +192,6 @@ nav {
   visibility: visible;
   transform: scaleX(1);
 }
-
-
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.4s

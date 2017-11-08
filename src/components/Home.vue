@@ -1,18 +1,36 @@
 <template>
 
   <div class="main">
-    <div class="left">
-      <h1>{{ title }}</h1>
-      <h3>{{ header }}</h3>
-      <p>{{ subHeader }}</p>
 
+    <div class="mainCont">
+
+      <div class="left">
+        <h1>{{ title }}</h1>
+        <h3>{{ header }}</h3>
+        <p class="subP">{{ subHeader }}</p>
+      </div>
+
+      <div class="right">
+        <transition name="fade2" mode="out-in">
+          <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
+        </transition>
+      </div>
 
     </div>
 
-    <div class="right">
-      <transition name="fade2" mode="out-in">
-        <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
-      </transition>
+    <div class="bio">
+      <p>I like weathered things.  I like the patina a quality garment develops over time.  Good clothes, like good furniture, have been built to wear well.  That’s  what I sell - quality menswear that’s a little worn.</p>
+
+      <p>I see beauty in the mundane and believe deeply that details matter.  Your daily look can bring you joy and inspiration.</p>
+
+      <p>At <b>H.Bailey</b> the aim is to help you craft your signature style with contemporary and vintage pieces that are lovingly curated. You’ll find cool denim, vintage sportcoats, and cashmere scarves. From fabulous shoes to dapper designer suits, we’ll get you dressed to show up for your life.</p>
+
+      <p>All who want to be handsome are invited to H.Bailey to invest in themselves, in sustainable luxury, in the art of a life lived in style.</p>
+
+      <p>XO,</p>
+
+      <p>H.</p>
+
     </div>
 
   </div>
@@ -52,8 +70,25 @@ export default {
 
 .main {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mainCont {
+  display: flex;
   @media (max-width: 768px) {
   flex-direction: column;
+  }
+}
+
+.bio {
+  width: 50%;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    width: 70%;
   }
 }
 
@@ -82,7 +117,7 @@ export default {
   }
 }
 
-h1, h3, p {
+h1, h3, .subP {
   font-weight: normal;
   transition: all 300ms;
   margin: 0;
