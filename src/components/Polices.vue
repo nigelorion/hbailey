@@ -32,15 +32,11 @@ export default {
 
 
 .main {
-  width: 50%;
-
-
-
-
+  width: 70%;
 
   text-align: center;
   @media (max-width: 768px) {
-    width: 70%;
+
   }
 }
 
@@ -52,7 +48,7 @@ p {
   height: 50%;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 

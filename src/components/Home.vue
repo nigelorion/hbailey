@@ -86,6 +86,8 @@ export default {
 .bio {
   width: 50%;
   text-align: center;
+  border-top: solid 1px rgb(191, 167, 112);
+  margin-top: 10px;
 
   @media (max-width: 768px) {
     width: 70%;

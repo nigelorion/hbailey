@@ -93,7 +93,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-top: solid 1px rgb(191, 167, 112); 
+  border-top: solid 1px rgb(191, 167, 112);
 
 }
 
@@ -102,7 +102,7 @@ footer {
   height: 25px;
   filter: opacity(.6);
   transition: all 200ms;
-  margin: 5px;
+  margin: 10px;
   @media (max-width: 768px) {
     height: 30px;
     margin: 10px;
