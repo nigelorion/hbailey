@@ -4,18 +4,17 @@
   <div class="main">
     <div class="gallery">
       <div class="galleryLeft">
+
         <v-touch v-on:swipeleft="currentImage--" v-on:swiperight="currentImage++">
           <transition name="fade2" mode="out-in">
             <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
           </transition>
         </v-touch>
 
-
         <button v-on:click="currentImage--" type="button" name="button" class="btnLeft">&#9664;</button>
         <button v-on:click="currentImage++"type="button" name="button" class="btnRight">&#9654;</button>
 
         <div class="thumbnails">
-
           <img v-for="(image, index) in images" v-on:click="thumbClick(index)" :id="index" class="thumb" :src="images[index]" alt="">
         </div>
 
@@ -54,46 +53,31 @@ export default {
 
 <style lang="scss" scoped>
 
-
 .gallery {
   display: flex;
-
   justify-content: center;
   align-items: center;
-  @media (max-width: 900px) {
+
+  @media (max-width: 800px) {
     flex-direction: column;
-
+    height: 800px;
   }
-
 }
-
-// .galleryLeft, .galleryRight {
-//
-//   -height: 500px;
-//   max-width: 500px;
-//   margin: 10px;
-//   @media (max-width: 900px) {
-//     height: 320px;
-//     width: 320px;
-//     margin: 5px;
-//   }
-// }
 
 .galleryRight {
   display: flex;
-  align-items: center;
   text-align: center;
-  justify-content: center;
+  align-items: center;
 
+  justify-content: center;
   width: 500px;
   height: 500px;
-  padding: 3%;
+  padding: 5px;
   @media (max-width: 800px) {
     width: auto;
-    height: auto;
-
+    max-height: 200px;
+    align-items: flex-start;
   }
-
 }
 
 .galleryText {
@@ -104,10 +88,9 @@ export default {
 img {
   height: 500px;
   width: 500px;
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     height: 320px;
     width: 320px;
-
   }
 }
 
@@ -122,11 +105,14 @@ img {
   border: none;
   color: rgba(255, 255, 255, 0.53);
   font-size: 2em;
-  height: 100%;
+  height: 500px;
   transition: all 300ms ease-in-out;;
   &:hover {
     background-color: rgba(201, 201, 201, 0.47);
     color: rgba(37, 37, 37, 0.82);
+  }
+  @media (max-width: 800px) {
+    height: 320px;
   }
 }
 

@@ -2,16 +2,6 @@
   <div class="main">
     <div class="container">
 
-      <!-- <div class="contactContainer">
-
-        <div class="socialContainer">
-          <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="../assets/facebook.png" alt=""></a>
-          <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="../assets/insta.png" alt=""></a>
-
-        </div>
-
-      </div> -->
-
       <div class="contactContainer">
         <p>hours</p>
         <p>1234466654</p>
@@ -22,9 +12,6 @@
       </div>
 
     </div>
-
-
-
 
   </div>
 </template>
@@ -45,12 +32,11 @@ export default {
 .main {
   text-align: center;
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
 }
+
 .container {
   height: 50%;
   display: flex;
@@ -73,7 +59,6 @@ export default {
   }
 }
 
-
 .contain {
   width: 350px;
   height: 400px;
@@ -88,15 +73,14 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
 }
-
 
 .map {
   height: 100%;
 }
 
-
+.mapContainer {
+  margin: 20px;
+}
 
 </style>

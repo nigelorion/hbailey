@@ -2,14 +2,12 @@
 
   <div id="app">
 
-
     <nav>
       <transition name="fade2">
         <div class="wrapper" v-if="show">
           <router-link class='links' to="/">Home</router-link>
           <router-link class='links' to="/gallery">Gallery</router-link>
           <router-link class='links' to="/polices">Policies</router-link>
-          <!-- <router-link class='links' to="/terms">terms</router-link> -->
           <router-link class='links' to="/contact">Contact</router-link>
         </div>
       </transition>
@@ -52,9 +50,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
-
-
 }
 
 .main {
@@ -70,33 +65,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-
   min-height: 100vh;
-
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
-
 }
 
-
-
-
-
 footer {
-
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   border-top: solid 1px rgb(191, 167, 112);
-
 }
-
 
 .socialLinks {
   height: 25px;
@@ -113,21 +95,14 @@ footer {
   }
 }
 
-
-
 nav {
-
   width: 100%;
-  min-height: 100px;
-
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: white;
   z-index: 120;
-
-
   @media (max-width: 768px) {
     flex-direction: row;
     justify-content: flex-start;

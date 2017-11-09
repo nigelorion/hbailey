@@ -78,6 +78,7 @@ export default {
 
 .mainCont {
   display: flex;
+  padding-top: 25px;
   @media (max-width: 768px) {
   flex-direction: column;
   }
@@ -88,7 +89,6 @@ export default {
   text-align: center;
   border-top: solid 1px rgb(191, 167, 112);
   margin-top: 10px;
-
   @media (max-width: 768px) {
     width: 70%;
   }
@@ -96,8 +96,6 @@ export default {
 
 .left, .right {
   border: solid 2px rgb(191, 167, 112);
-
-
   height: 250px;
   width: 250px;
   display: flex;
@@ -113,8 +111,6 @@ export default {
 }
 
 .right {
-
-  // background-color: rgb(230, 213, 202);
   @media (max-width: 768px) {
   }
 }
@@ -146,11 +142,6 @@ p {
   font-size: 1.1em;
   @media (max-width: 768px) {
   }
-}
-
-.left {
-
-
 }
 
 .socialLinks {
