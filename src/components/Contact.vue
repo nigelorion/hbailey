@@ -5,7 +5,9 @@
         <h1>H.Bailey</h1>
         <p>108 Cherry Street, Suite 1 <br>
           Seattle, WA 98104</p>
-        <p>206-351-1595</p>
+          <p class="phoneNum">206-351-1595</p>
+          <button class="textMe"><a href="tel:1-206-351-1595">Text me</a>
+    </button>
         <p>Tuesday - Sunday, 12-7</p>
 
       </div>
@@ -40,6 +42,35 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.textMe {
+  display: none;
+  height: 50px;
+  width: 100px;
+  background-color: rgb(191, 167, 112);
+  margin: 3px auto;
+  border: none;
+
+  &:hover {
+    background-color: rgb(193, 193, 193);
+  }
+  & a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.phoneNum {
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 h1 {
