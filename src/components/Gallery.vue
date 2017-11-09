@@ -54,43 +54,39 @@ export default {
 
 <style lang="scss" scoped>
 
-.main {
-  @media (max-width: 900px) {
-    margin-top: 25%;
-  }
-}
 
 .gallery {
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
   @media (max-width: 900px) {
+    flex-direction: column;
 
   }
+
 }
 
-.galleryLeft, .galleryRight {
-
-  height: 500px;
-  width: 500px;
-  margin: 10px;
-  @media (max-width: 900px) {
-    height: 320px;
-    width: 320px;
-    margin: 5px;
-  }
-}
+// .galleryLeft, .galleryRight {
+//
+//   -height: 500px;
+//   max-width: 500px;
+//   margin: 10px;
+//   @media (max-width: 900px) {
+//     height: 320px;
+//     width: 320px;
+//     margin: 5px;
+//   }
+// }
 
 .galleryRight {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  @media (max-width: 900px) {
-    order: 1;
 
-  }
+  width: 50%;
+
 }
 
 .galleryText {
@@ -99,8 +95,13 @@ export default {
 }
 
 img {
-  height: 100%;
-  width: 100%;
+  height: 500px;
+  width: 500px;
+  @media (max-width: 900px) {
+    height: 320px;
+    width: 320px;
+
+  }
 }
 
 .galleryLeft {
