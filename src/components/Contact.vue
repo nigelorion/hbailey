@@ -6,7 +6,7 @@
         <p>108 Cherry Street, Suite 1 <br>
           Seattle, WA 98104</p>
           <p class="phoneNum">206-351-1595</p>
-          <button class="textMe"><a href="tel:1-206-351-1595">Text me</a>
+          <button class="textMe"><a href="sms:1-206-351-1595">Text me</a>
     </button>
         <p>Tuesday - Sunday, 12-7</p>
 
