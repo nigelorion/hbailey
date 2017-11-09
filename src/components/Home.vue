@@ -25,7 +25,7 @@
 
       <p>At <b>H.Bailey</b> the aim is to help you craft your signature style with contemporary and vintage pieces that are lovingly curated. You’ll find cool denim, vintage sportcoats, and cashmere scarves. From fabulous shoes to dapper designer suits, we’ll get you dressed to show up for your life.</p>
 
-      <p>All who want to be handsome are invited to H.Bailey to invest in themselves, in sustainable luxury, in the art of a life lived in style.</p>
+      <p>All who want to be handsome are invited to <b>H.Bailey</b> to invest in themselves, in sustainable luxury, in the art of a life lived in style.</p>
 
       <p>XO,</p>
 

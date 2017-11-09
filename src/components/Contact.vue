@@ -81,6 +81,7 @@ h1 {
 }
 
 .contactContainer {
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
