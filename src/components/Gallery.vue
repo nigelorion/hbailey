@@ -85,7 +85,14 @@ export default {
   text-align: center;
   justify-content: center;
 
-  width: 50%;
+  width: 500px;
+  height: 500px;
+  padding: 3%;
+  @media (max-width: 800px) {
+    width: auto;
+    height: auto;
+
+  }
 
 }
 
