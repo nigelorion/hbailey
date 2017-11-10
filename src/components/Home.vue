@@ -46,7 +46,7 @@ export default {
       title: 'H.Bailey',
       header: 'CURATED RESALE',
       subHeader: 'menswear for all',
-      images: ['https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/22228153_10155498356025795_148669247754655773_n.jpg?oh=137badc2c57e472394db643dc377606b&oe=5A7BFD03', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22049865_10155482460010795_6342427858041865217_n.jpg?oh=6f391a4c98f1ae1ee8de13eac01c388e&oe=5A7EAEBE', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/23031437_10155572760190795_6574598774051766548_n.jpg?oh=3f67590145413122ce92b7425bbaeeb8&oe=5A6507D5', 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/22046034_10155479723630795_6557431837921339062_n.jpg?oh=afb13b34a8d023e71fcee1bd78b0a856&oe=5A88214B'],
+      images: ['https://1.bp.blogspot.com/-4ogaUVbkyHc/VyQ3O3w-rjI/AAAAAAAAN7k/uHRiJirGTtokxtdEF5iXR5DYSu9aVNe6ACKgB/s1600/IMG_20160429_172620965.jpg', 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/22228153_10155498356025795_148669247754655773_n.jpg?oh=137badc2c57e472394db643dc377606b&oe=5A7BFD03', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22049865_10155482460010795_6342427858041865217_n.jpg?oh=6f391a4c98f1ae1ee8de13eac01c388e&oe=5A7EAEBE', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/23031437_10155572760190795_6574598774051766548_n.jpg?oh=3f67590145413122ce92b7425bbaeeb8&oe=5A6507D5', 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/22046034_10155479723630795_6557431837921339062_n.jpg?oh=afb13b34a8d023e71fcee1bd78b0a856&oe=5A88214B'],
       currentImage: 0,
       timer: null
     }
@@ -67,6 +67,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+img {
+  object-fit: cover;
+}
 
 .main {
   display: flex;

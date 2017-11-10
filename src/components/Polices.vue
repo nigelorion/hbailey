@@ -8,7 +8,7 @@
 
       <p>*Prices are firm - as marked.</p>
 
-      <p>*I buy quality/high end/designer menswear by appointment only.  I pay out a little “fun money” (not much! typically 5.00 to 15.00 dollars per piece).  Please bring items in excellent condition on hangers. Text me to set up your appointment.</p>
+      <p>*I buy quality/high end/designer menswear by appointment only.  I pay out a little “fun money”.  Please bring items in excellent condition on hangers. Text me to set up your appointment.</p>
       <p class="phoneNum">206-351-1595</p>
       <button class="textMe"><a href="sms:1-206-351-1595">Text me</a>
 </button>
