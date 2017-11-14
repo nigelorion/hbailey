@@ -6,7 +6,7 @@
 
       <p>*Returns are offered WITHIN 30 days, with receipt, for in store credit only.</p>
 
-      <p>*Prices are firm - as marked.</p>
+      <p>*All sales are final and our carefully-curated items are sold as presented.  If purchasing a gift, consider choosing accessories or a gift certificate as a foolproof option.</p>
 
       <p>*I buy quality/high end/designer menswear by appointment only.  I pay out a little “fun money”.  Please bring items in excellent condition on hangers. Text me to set up your appointment.</p>
       <p class="phoneNum">206-351-1595</p>
