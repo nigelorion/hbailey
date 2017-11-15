@@ -19,7 +19,7 @@
 
     <footer>
       <p>H.Bailey 2017 &#169;</p>
-      <a target="_blank" href="https://www.facebook.com/hilary.b.burnett"><img class="socialLinks" src="./assets/facebook.png" alt=""></a>
+      <a target="_blank" href="https://www.facebook.com/hbailey.menswear/"><img class="socialLinks" src="./assets/facebook.png" alt=""></a>
       <a target="_blank" href="https://www.instagram.com/hilarybaileyburnett/"><img  class="socialLinks" src="./assets/insta.png" alt=""></a>
     </footer>
 
