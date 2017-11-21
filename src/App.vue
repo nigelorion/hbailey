@@ -81,12 +81,12 @@ footer {
 }
 
 .socialLinks {
-  height: 25px;
+  height: 20px;
   filter: opacity(.6);
   transition: all 200ms;
   margin: 10px;
   @media (max-width: 768px) {
-    height: 30px;
+    height: 25px;
     margin: 10px;
   }
   &:hover {

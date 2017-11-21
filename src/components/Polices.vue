@@ -40,7 +40,7 @@ export default {
   height: 50px;
   width: 100px;
   background-color: rgb(191, 167, 112);
-  margin: 3px auto;
+  margin: 10px auto;
   border: none;
 
   &:hover {

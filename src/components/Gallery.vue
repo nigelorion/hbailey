@@ -11,8 +11,8 @@
           </transition>
         </v-touch>
 
-        <button v-on:click="currentImage--" type="button" name="button" class="btnLeft">&#9664;</button>
-        <button v-on:click="currentImage++"type="button" name="button" class="btnRight">&#9654;</button>
+        <button v-on:click="currentImage--" type="button" name="button" class="btnLeft">&#9001;</button>
+        <button v-on:click="currentImage++"type="button" name="button" class="btnRight">&#9002;</button>
 
         <div class="thumbnails">
           <img v-for="(image, index) in images" v-on:click="thumbClick(index)" :id="index" class="thumb" :src="images[index]" alt="">
