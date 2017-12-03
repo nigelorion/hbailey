@@ -77,7 +77,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/tim2.jpg);
+  // background-image: url(../assets/tim2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
