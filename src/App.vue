@@ -78,6 +78,7 @@ footer {
   align-items: center;
   width: 100%;
   border-top: solid 1px rgb(191, 167, 112);
+  
 }
 
 .socialLinks {
@@ -169,7 +170,7 @@ nav {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.4s
+  transition: opacity 0.6s
 }
 
 .fade-enter, .fade-leave-active {

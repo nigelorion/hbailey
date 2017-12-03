@@ -77,25 +77,34 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../assets/tim2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
 
 }
 
 .mainCont {
   display: flex;
-  padding-top: 25px;
+  margin-top: 25px;
   @media (max-width: 768px) {
   flex-direction: column;
   }
+  // background-color: white
 }
 
 .bio {
-  width: 50%;
+  width: 510px;
+  border: solid 2px rgb(191, 167, 112);
   text-align: center;
   border-top: solid 1px rgb(191, 167, 112);
   margin-top: 10px;
   @media (max-width: 768px) {
     width: 85%;
   }
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  margin: 10px;
 
 }
 
@@ -108,16 +117,18 @@ img {
   align-items: center;
   flex-direction: column;
   margin: 10px;
-  padding: 10px;
+  // padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
   @media (max-width: 768px) {
-    height: 210px;
-    width: 210px;
+    // height: 210px;
+    // width: 210px;
   }
 }
 
 .right {
   @media (max-width: 768px) {
   }
+  background-color: rgba(255, 255, 255, 0.68);
 }
 
 h1, h3, .subP {
