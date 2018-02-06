@@ -47,7 +47,7 @@ export default {
       title: 'H.Bailey',
       header: 'CURATED RESALE',
       subHeader: 'menswear for all',
-      images: ['https://1.bp.blogspot.com/-4ogaUVbkyHc/VyQ3O3w-rjI/AAAAAAAAN7k/uHRiJirGTtokxtdEF5iXR5DYSu9aVNe6ACKgB/s1600/IMG_20160429_172620965.jpg', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/23622331_163116877762334_2666721309216779934_n.jpg?oh=6287177b05d6bbc8df6fc9b895b03b13&oe=5AA86D98', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/23722281_164669347607087_4094898096238189237_n.jpg?oh=6c0940e16e76f17d14df5e9b22b29ecb&oe=5AA8CB9C', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22049865_10155482460010795_6342427858041865217_n.jpg?oh=6f391a4c98f1ae1ee8de13eac01c388e&oe=5A7EAEBE', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/23031437_10155572760190795_6574598774051766548_n.jpg?oh=3f67590145413122ce92b7425bbaeeb8&oe=5A6507D5', 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/22046034_10155479723630795_6557431837921339062_n.jpg?oh=afb13b34a8d023e71fcee1bd78b0a856&oe=5A88214B', 'https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/23507494_918989928269575_1878742961559175168_n.jpg'],
+      images: ['./static/imgs/hilary1.jpg', './static/imgs/windowSign.jpg', './static/imgs/jackets.jpg', './static/imgs/rings.jpg', './static/imgs/brownJacket.jpg', './static/imgs/blackJacket.jpg'],
       currentImage: 0,
       timer: null
     }
@@ -84,6 +84,7 @@ img {
   @media (min-width: 1200px) {
     flex-direction: row;
   }
+  // background-image: url(../assets/H.Bailey.jpg);
 }
 
 .mainCont {
@@ -94,21 +95,25 @@ img {
   }
   @media (min-width: 1200px) {
     flex-direction: column;
+    margin-top: 0px;
   }
 }
 
 .bio {
+  font-size: 1.1em;
   width: 510px;
-  border: solid 2px rgb(191, 167, 112);
   text-align: center;
   border-top: solid 1px rgb(191, 167, 112);
   margin-top: 10px;
-  @media (max-width: 768px) {
-    width: 85%;
-  }
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
   margin: 10px;
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+  @media (min-width: 1200px) {
+    border-top: none;
+  }
 }
 
 .left, .right {

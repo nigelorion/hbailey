@@ -38,7 +38,7 @@ export default {
   data () {
     return {
       imageDetails: ['Hilary Bailey Burnett, a Seattle native, relishes the opportunity to build a destination boutique in the heart of Pioneer Square. Her work as a personal wardrobe stylist for over 15 years informs her approach to the shop. She believes  in the everyday art of getting dressed.', '"You can find inspiration in everything. If you can\'t, then you\'re not looking properly."<br><b>-Paul Smith</b>', '“Buy less, choose well.” <br><b>-Vivienne Westwood</b>', '“Fashion is the armor to survive the reality of everyday life.” <br><b>-Bill Cunningham</b>', '"Don\'t be trapped by dogma - which is living with the results of other people\'s thinking. Don\'t let the noise of others\' opinions drown out your own inner voice. Have the courage to follow your heart and intuition. <br><b>-Paul Smith</b>"'],
-      images: ['https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22046034_10155479723630795_6557431837921339062_n.jpg?oh=afb13b34a8d023e71fcee1bd78b0a856&oe=5A88214B', 'https://scontent-sea1-1.cdninstagram.com/t51.2885-15/e35/12960145_1436156783076527_2011823699_n.jpg', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22815304_10155559201815795_3621074795106515772_n.jpg?oh=0f0821b5bbca99ffdd1af991d6095570&oe=5AA46D48', 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/22814445_10155556278320795_1282492056027346624_n.jpg?oh=8417d968b340b0c4d253736675224f9d&oe=5A6F2A09', 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-0/p526x296/22528103_10155522532560795_1420887067215911048_n.jpg?oh=05db0219a3e0dfda68a78dd7249f7f91&oe=5A709D5A'],
+      images: ['./static/imgs/windowInside.jpg', './static/imgs/jackets3.jpg', './static/imgs/misc.jpg', './static/imgs/timAlley.jpg', './static/imgs/drawing.jpg'],
       currentImage: 0
     }
   },
@@ -56,10 +56,13 @@ export default {
 .gallery {
   display: flex;
   align-items: center;
-  padding-top: 10%;
+  margin: 10%;
+
+
   @media (max-width: 800px) {
     flex-direction: column;
-      min-height: 800px;
+    min-height: 800px;
+    padding-top: 10%;
   }
 }
 
@@ -68,9 +71,9 @@ export default {
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  height: 500px;
-  padding: 5px;
+  // width: 500px;
+  // height: 500px;
+  // padding: 5px;
   @media (max-width: 800px) {
     width: auto;
     max-height: 200px;
@@ -80,12 +83,15 @@ export default {
 
 .galleryText {
   font-size: 1.2em;
-  margin: 10px;
+  margin: 10%;
+  width: 400px
+
 }
 
 img {
-  height: 500px;
+  object-fit: contain;
   width: 500px;
+  height: 500px;
   @media (max-width: 800px) {
     height: 320px;
     width: 320px;
