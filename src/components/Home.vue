@@ -47,7 +47,7 @@ export default {
       title: 'H.Bailey',
       header: 'CURATED RESALE',
       subHeader: 'menswear for all',
-      images: ['./static/imgs/hilary1.jpg', './static/imgs/windowSign.jpg', './static/imgs/jackets.jpg', './static/imgs/rings.jpg', './static/imgs/brownJacket.jpg', './static/imgs/blackJacket.jpg'],
+      images: ['./static/imgs/windowInside.jpg', './static/imgs/windowSign.jpg', './static/imgs/jackets.jpg', './static/imgs/rings.jpg', './static/imgs/brownJacket.jpg', './static/imgs/blackJacket.jpg'],
       currentImage: 0,
       timer: null
     }

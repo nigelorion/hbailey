@@ -38,7 +38,7 @@ export default {
   data () {
     return {
       imageDetails: ['Hilary Bailey Burnett, a Seattle native, relishes the opportunity to build a destination boutique in the heart of Pioneer Square. Her work as a personal wardrobe stylist for over 15 years informs her approach to the shop. She believes  in the everyday art of getting dressed.', '"You can find inspiration in everything. If you can\'t, then you\'re not looking properly."<br><b>-Paul Smith</b>', '“Buy less, choose well.” <br><b>-Vivienne Westwood</b>', '“Fashion is the armor to survive the reality of everyday life.” <br><b>-Bill Cunningham</b>', '"Don\'t be trapped by dogma - which is living with the results of other people\'s thinking. Don\'t let the noise of others\' opinions drown out your own inner voice. Have the courage to follow your heart and intuition. <br><b>-Paul Smith</b>"'],
-      images: ['./static/imgs/windowInside.jpg', './static/imgs/jackets3.jpg', './static/imgs/misc.jpg', './static/imgs/timAlley.jpg', './static/imgs/drawing.jpg'],
+      images: ['./static/imgs/hilary1.jpg', './static/imgs/jackets3.jpg', './static/imgs/misc.jpg', './static/imgs/timAlley.jpg', './static/imgs/drawing.jpg'],
       currentImage: 0
     }
   },
