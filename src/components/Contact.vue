@@ -8,7 +8,7 @@
           <p class="phoneNum">206-351-1595</p>
           <button class="textMe"><a href="sms:1-206-351-1595">Text me</a>
     </button>
-        <p>Monday - Saturday 12-7</p> 
+        <p>Monday - Saturday 12-7</p>
 
       </div>
 

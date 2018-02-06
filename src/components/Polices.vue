@@ -4,14 +4,14 @@
 
       <p>*H.Bailey does not accept cash at this time.  All “plastic” is welcome.</p>
 
-      <p>*All sales are final and our carefully-curated items are sold as presented.  If purchasing a gift, consider choosing accessories or a gift certificate as a foolproof option.</p>
+      <p>*All sales are final and our carefully-curated items are sold as presented.  If purchasing a gift, consider choosing accessories or a gift card as a foolproof option.</p>
 
       <p>*I buy quality/high end/designer menswear by appointment only.  I pay out a little “fun money”.  Please bring items in excellent condition on hangers. Text me to set up your appointment.</p>
 
       <p class="phoneNum">206-351-1595</p>
 
       <button class="textMe"><a href="sms:1-206-351-1595">Text me</a>
-        
+
 </button>
     </div>
 
@@ -45,7 +45,6 @@ export default {
   background-color: rgb(191, 167, 112);
   margin: 10px auto;
   border: none;
-
   &:hover {
     background-color: rgb(193, 193, 193);
   }

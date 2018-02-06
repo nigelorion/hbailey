@@ -55,12 +55,8 @@ export default {
 
 .gallery {
   display: flex;
-  // justify-content: center;
   align-items: center;
   padding-top: 10%;
-
-
-
   @media (max-width: 800px) {
     flex-direction: column;
       min-height: 800px;
@@ -71,7 +67,6 @@ export default {
   display: flex;
   text-align: center;
   align-items: center;
-
   justify-content: center;
   width: 500px;
   height: 500px;

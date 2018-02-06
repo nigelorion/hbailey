@@ -19,6 +19,7 @@
     </div>
 
     <div class="bio">
+
       <p>I like weathered things.  I like the patina a quality garment develops over time.  Good clothes, like good furniture, have been built to wear well.  That’s  what I sell - quality menswear that’s a little worn.</p>
 
       <p>I see beauty in the mundane and believe deeply that details matter.  Your daily look can bring you joy and inspiration.</p>
@@ -77,11 +78,12 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-image: url(../assets/tim2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .mainCont {
@@ -90,7 +92,9 @@ img {
   @media (max-width: 768px) {
   flex-direction: column;
   }
-  // background-color: white
+  @media (min-width: 1200px) {
+    flex-direction: column;
+  }
 }
 
 .bio {
@@ -105,7 +109,6 @@ img {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
   margin: 10px;
-
 }
 
 .left, .right {
@@ -117,12 +120,7 @@ img {
   align-items: center;
   flex-direction: column;
   margin: 10px;
-  // padding: 10px;
   background-color: rgba(255, 255, 255, 0.9);
-  @media (max-width: 768px) {
-    // height: 210px;
-    // width: 210px;
-  }
 }
 
 .right {
