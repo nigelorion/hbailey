@@ -29,7 +29,6 @@
             </transition>
           </v-touch>
 
-
           <button v-on:click="lightBoxImage--" type="button" name="button" class="btnLeft">&#9001;</button>
           <button v-on:click="lightBoxImage++"type="button" name="button" class="btnRight">&#9002;</button>
         </div>
@@ -87,6 +86,7 @@ export default {
     lightBoxOpen: function () {
       this.lightBoxActive = true
       this.lightBoxImage = this.faderImage
+      this.timer = 0
     },
     lightBoxClose: function () {
       this.lightBoxActive = false
@@ -268,7 +268,6 @@ p {
   position: absolute;
   top: 80px;
   right: 10px;
-
   font-size: 5em;
   color: white;
   z-index: 99;
@@ -278,6 +277,11 @@ p {
   }
   @media (max-width: 768px) {
     top: 20px;
+  }
+  transition: all 300ms;
+  &:hover {
+    transform: scale(1.2);
+    color: rgb(106, 106, 106);
   }
 }
 
