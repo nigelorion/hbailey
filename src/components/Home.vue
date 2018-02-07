@@ -79,11 +79,8 @@ export default {
   },
   methods: {
     startRotation: function () {
-      this.timer = setInterval(this.next, 3500)
+      this.timer = setInterval(this.next, 5000)
     },
-    // stopRotation: function () {
-    //   this.timer = null
-    // },
     next: function () {
       this.faderImage++
     },
@@ -240,16 +237,6 @@ p {
     img {
       width: 100%;
     }
-
-      // margin: 0;
-      // padding: 0;
-
-      // background: none;
-      // border: none;
-      // font-size: 3em;
-      // padding: 0;
-      // margin: 0;
-
   }
 }
 
