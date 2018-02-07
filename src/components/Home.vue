@@ -22,7 +22,13 @@
 
         </div>
         <div class="imgBox">
-          <img :src="images[Math.abs(lightBoxImage) % images.length]" class="lightBoxImages"alt="Light Box Images">
+          <v-touch v-on:swipeleft="lightBoxImage--" v-on:swiperight="lightBoxImage++">
+            <transition name="fade2" mode="out-in">
+              <img :src="images[Math.abs(lightBoxImage) % images.length]" class="lightBoxImages"alt="Light Box Images">
+
+            </transition>
+          </v-touch>
+
 
           <button v-on:click="lightBoxImage--" type="button" name="button" class="btnLeft">&#9001;</button>
           <button v-on:click="lightBoxImage++"type="button" name="button" class="btnRight">&#9002;</button>
