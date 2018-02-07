@@ -6,7 +6,7 @@
 
       <p>*All sales are final and our carefully-curated items are sold as presented.  If purchasing a gift, consider choosing accessories or a gift card as a foolproof option.</p>
 
-      <p>*I buy quality/high end/designer menswear by appointment only.  I pay out a little “fun money”.  Please bring items in excellent condition on hangers. Text me to set up your appointment.</p>
+      <p>*I buy quality/high end/designer menswear by appointment only.  I pay out a little “pocket money”. Text me to inquire.</p>
 
       <p class="phoneNum">206-351-1595</p>
 

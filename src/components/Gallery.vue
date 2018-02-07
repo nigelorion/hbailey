@@ -37,8 +37,8 @@ export default {
   name: 'main',
   data () {
     return {
-      imageDetails: ['Hilary Bailey Burnett, a Seattle native, relishes the opportunity to build a destination boutique in the heart of Pioneer Square. Her work as a personal wardrobe stylist for over 15 years informs her approach to the shop. She believes  in the everyday art of getting dressed.', '"You can find inspiration in everything. If you can\'t, then you\'re not looking properly."<br><b>-Paul Smith</b>', '“Buy less, choose well.” <br><b>-Vivienne Westwood</b>', '“Fashion is the armor to survive the reality of everyday life.” <br><b>-Bill Cunningham</b>', '"Don\'t be trapped by dogma - which is living with the results of other people\'s thinking. Don\'t let the noise of others\' opinions drown out your own inner voice. Have the courage to follow your heart and intuition. <br><b>-Paul Smith</b>"'],
-      images: ['./static/imgs/hilary1.jpg', './static/imgs/jackets3.jpg', './static/imgs/misc.jpg', './static/imgs/timAlley.jpg', './static/imgs/drawing.jpg'],
+      imageDetails: ['Hilary Bailey Burnett, a Seattle native, relishes the opportunity to build a destination boutique in the heart of Pioneer Square. Her work as a personal wardrobe stylist for over 15 years informs her approach to the shop. She believes  in the everyday art of getting dressed.', '"You can find inspiration in everything. If you can\'t, then you\'re not looking properly."<br><b>-Paul Smith</b>', '“Buy less, choose well.” <br><b>-Vivienne Westwood</b>', '“Fashion is the armor to survive the reality of everyday life.” <br><b>-Bill Cunningham</b>', '"Don\'t be trapped by dogma - which is living with the results of other people\'s thinking. Don\'t let the noise of others\' opinions drown out your own inner voice. Have the courage to follow your heart and intuition." <br><b>-Paul Smith</b>', '"Looking good isn\'t self-importance; it\'s self-respect." <br><b>-Charles Hix</b>', '"I think perfection is ugly. Somewhere in the things humans make, I want to see scars, failure, disorder, distortion."  <br><b>-Yohji Yamamoto</b>', '"If you feel safe in the area you’re working in, you’re not working in the right area. Always go a little further into the water than you feel you’re capable of being in. Go a little bit out of your depth. And when you don’t feel that your feet are quite touching the bottom, you’re just about in the right place to do something exciting."<br><b>-David Bowie</b>'],
+      images: ['./static/imgs/hilary1.jpg', './static/imgs/jackets3.jpg', './static/imgs/misc.jpg', './static/imgs/timAlley.jpg', './static/imgs/drawing.jpg', './static/imgs/couple.jpg', './static/imgs/woman1.jpg', './static/imgs/dude1.jpg'],
       currentImage: 0
     }
   },
@@ -107,8 +107,8 @@ img {
   outline: none;
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.53);
-  font-size: 2em;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3em;
   height: 500px;
   transition: all 300ms ease-in-out;;
   &:hover {
@@ -133,6 +133,7 @@ img {
 .thumbnails {
   display: flex;
   justify-content: center;
+
 }
 
 .thumb {
@@ -142,6 +143,10 @@ img {
   filter: grayscale(80%);
   &:hover {
     filter: grayscale(0%);
+  }
+  @media (max-width: 768px) {
+    width: 37px;
+    height: 37px;
   }
 }
 

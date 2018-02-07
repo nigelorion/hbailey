@@ -12,8 +12,22 @@
 
       <div class="right">
         <transition name="fade2" mode="out-in">
-          <img class="imgGallery" :key='currentImage' :src="images[Math.abs(currentImage) % images.length]" alt="Image Gallery">
+          <img v-on:click="lightBoxOpen()"class="imgGallery" :key='faderImage' :src="images[Math.abs(faderImage) % images.length]" alt="Image Fade Gallery">
         </transition>
+      </div>
+
+      <div v-if="lightBoxActive" class="lightBox">
+        <div class="closeDiv" v-on:click="lightBoxClose()">
+          <div v-on:click="lightBoxClose()" class="closeBtn"><p>&times;</p></div>
+
+        </div>
+        <div class="imgBox">
+          <img :src="images[Math.abs(lightBoxImage) % images.length]" class="lightBoxImages"alt="Light Box Images">
+
+          <button v-on:click="lightBoxImage--" type="button" name="button" class="btnLeft">&#9001;</button>
+          <button v-on:click="lightBoxImage++"type="button" name="button" class="btnRight">&#9002;</button>
+        </div>
+
       </div>
 
     </div>
@@ -47,9 +61,11 @@ export default {
       title: 'H.Bailey',
       header: 'CURATED RESALE',
       subHeader: 'menswear for all',
-      images: ['./static/imgs/windowInside.jpg', './static/imgs/windowSign.jpg', './static/imgs/jackets.jpg', './static/imgs/rings.jpg', './static/imgs/brownJacket.jpg', './static/imgs/blackJacket.jpg'],
-      currentImage: 0,
-      timer: null
+      images: ['./static/imgs/hilary2.jpg', './static/imgs/windowInside.jpg', './static/imgs/windowSign.jpg', './static/imgs/jackets.jpg', './static/imgs/rings.jpg', './static/imgs/brownJacket.jpg', './static/imgs/blackJacket.jpg', './static/imgs/street.jpg'],
+      faderImage: 0,
+      lightBoxImage: 0,
+      timer: null,
+      lightBoxActive: false
     }
   },
   mounted: function () {
@@ -57,10 +73,16 @@ export default {
   },
   methods: {
     startRotation: function () {
-      this.timer = setInterval(this.next, 3700)
+      this.timer = setInterval(this.next, 3300)
     },
     next: function () {
-      this.currentImage++
+      this.faderImage++
+    },
+    lightBoxOpen: function () {
+      this.lightBoxActive = true
+    },
+    lightBoxClose: function () {
+      this.lightBoxActive = false
     }
   }
 }
@@ -84,7 +106,6 @@ img {
   @media (min-width: 1200px) {
     flex-direction: row;
   }
-  // background-image: url(../assets/H.Bailey.jpg);
 }
 
 .mainCont {
@@ -134,6 +155,12 @@ img {
   background-color: rgba(255, 255, 255, 0.68);
 }
 
+.right:hover {
+  filter: grayscale(80%);
+  cursor: pointer;
+
+}
+
 h1, h3, .subP {
   font-weight: normal;
   transition: all 300ms;
@@ -176,6 +203,95 @@ p {
     filter: opacity(.8);
     transform: scale(1.1);
   }
+}
+
+.lightBox {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .imgBox {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    max-width: 800px;
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+    img {
+      width: 100%;
+    }
+
+      // margin: 0;
+      // padding: 0;
+
+      // background: none;
+      // border: none;
+      // font-size: 3em;
+      // padding: 0;
+      // margin: 0;
+
+  }
+}
+
+.btnLeft, .btnRight {
+  position: absolute;
+  outline: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+  font-size: 3em;
+  &:hover {
+    background-color: rgba(201, 201, 201, 0.47);
+    color: rgba(37, 37, 37, 0.82);
+  }
+
+}
+
+.closeDiv {
+  z-index: 4;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+
+  font-size: 5em;
+  color: white;
+  z-index: 99;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 768px) {
+    top: 20px;
+  }
+}
+
+.btnLeft {
+  left: 0;
+  top: 0;
+}
+
+.btnRight {
+  right: 0;
+  top: 0;
 }
 
 .socialContainer {
