@@ -79,13 +79,17 @@ export default {
   },
   methods: {
     startRotation: function () {
-      this.timer = setInterval(this.next, 3300)
+      this.timer = setInterval(this.next, 3500)
     },
+    // stopRotation: function () {
+    //   this.timer = null
+    // },
     next: function () {
       this.faderImage++
     },
     lightBoxOpen: function () {
       this.lightBoxActive = true
+      this.lightBoxImage = this.faderImage
     },
     lightBoxClose: function () {
       this.lightBoxActive = false
