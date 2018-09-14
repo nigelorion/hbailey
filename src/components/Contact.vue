@@ -95,7 +95,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin: 30px 0px 30px 0px;
   font-size: 1.5em;
 }
 

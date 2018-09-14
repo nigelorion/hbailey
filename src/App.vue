@@ -118,10 +118,6 @@ footer {
   height: 60px;
   background-color: #282f36;
   align-items: center;
-  @media (max-width: 768px) {
-    height: 50px;
-    // justify-content: center;
-  }
 }
 
 .links {

@@ -134,7 +134,7 @@ img {
 
 .bio {
   font-size: 1.1em;
-  width: 700px;
+  width: 460px;
   text-align: center;
   border-top: solid 1px rgb(191, 167, 112);
   margin-top: 10px;
