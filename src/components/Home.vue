@@ -12,7 +12,7 @@
 
       <div class="right">
         <transition name="fade2" mode="out-in">
-          <img v-on:click="lightBoxOpen()"class="imgGallery" :key='faderImage' :src="images[Math.abs(faderImage) % images.length]" alt="Image Fade Gallery">
+          <img v-on:click="lightBoxOpen()" class="imgGallery" :key='faderImage' :src="images[Math.abs(faderImage) % images.length]" alt="Image Fade Gallery">
         </transition>
       </div>
 
@@ -24,13 +24,13 @@
         <div class="imgBox">
           <v-touch v-on:swipeleft="lightBoxImage--" v-on:swiperight="lightBoxImage++">
             <transition name="fade2" mode="out-in">
-              <img :src="images[Math.abs(lightBoxImage) % images.length]" class="lightBoxImages"alt="Light Box Images">
+              <img :src="images[Math.abs(lightBoxImage) % images.length]" class="lightBoxImages" alt="Light Box Images">
 
             </transition>
           </v-touch>
 
           <button v-on:click="lightBoxImage--" type="button" name="button" class="btnLeft">&#9001;</button>
-          <button v-on:click="lightBoxImage++"type="button" name="button" class="btnRight">&#9002;</button>
+          <button v-on:click="lightBoxImage++" type="button" name="button" class="btnRight">&#9002;</button>
         </div>
 
       </div>
