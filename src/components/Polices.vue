@@ -32,9 +32,10 @@ export default {
 <style lang="scss" scoped>
 
 .main {
-  width: 70%;
+  width: 50%;
   text-align: center;
   @media (max-width: 768px) {
+    width: 90%;
   }
 }
 
@@ -76,6 +77,7 @@ p {
   height: 50%;
   display: flex;
   flex-direction: column;
+  font-size: 1.2em;
 }
 
 </style>

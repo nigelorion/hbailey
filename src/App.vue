@@ -2,15 +2,11 @@
 
   <div id="app">
 
-    <nav>
-      <transition name="fade2">
-        <div class="wrapper" v-if="show">
-          <router-link class='links' to="/">Home</router-link>
-          <router-link class='links' to="/gallery">Gallery</router-link>
-          <router-link class='links' to="/polices">Policies</router-link>
-          <router-link class='links' to="/contact">Contact</router-link>
-        </div>
-      </transition>
+    <nav class="navBar" v-if="show">
+      <router-link class='links' to="/">Home</router-link>
+      <router-link class='links' to="/gallery">Gallery</router-link>
+      <router-link class='links' to="/polices">Policies</router-link>
+      <router-link class='links' to="/contact">Contact</router-link>
     </nav>
 
     <transition name="fade" mode="out-in" appear>
@@ -50,6 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  box-sizing: border-box;
 }
 
 .main {
@@ -78,12 +75,13 @@ footer {
   align-items: center;
   width: 100%;
   border-top: solid 1px rgb(191, 167, 112);
+  font-size: 1.2em;
   
 }
 
 .socialLinks {
-  height: 20px;
-  filter: opacity(.6);
+  height: 25px;
+  filter: opacity(.8);
   transition: all 200ms;
   margin: 10px;
   @media (max-width: 768px) {
@@ -91,45 +89,43 @@ footer {
     margin: 10px;
   }
   &:hover {
-    filter: opacity(.8);
+    filter: opacity(.5);
     transform: scale(1.1);
   }
 }
 
-nav {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  z-index: 120;
-  @media (max-width: 768px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0);
-  }
-}
+// nav {
+//   width: 100%;
+//   height: 100px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: black;
+//   z-index: 120;
+//   @media (max-width: 768px) {
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     height: 50px;
+//     width: 100%;
+//     // background-color: rgba(255, 255, 255, 0);
+//   }
+// }
 
-.wrapper {
+.navBar {
   display: flex;
   justify-content: space-around;
-  width: 60%;
-  height: 40px;
-  background-color: white;
+  width: 100%;
+  height: 60px;
+  background-color: #282f36;
+  align-items: center;
   @media (max-width: 768px) {
-    flex-direction: row;
-    width: 100vw;
     height: 50px;
-    justify-content: center;
-    margin-top: 10px;
+    // justify-content: center;
   }
 }
 
 .links {
-  color: rgb(158, 156, 156);
+  color: rgb(201, 201, 201);
   text-decoration: none;
   font-size: 1.5em;
   transition: all 400ms;
@@ -137,15 +133,9 @@ nav {
   position: relative;
   &:hover {
     color: rgb(191, 167, 112);
-    margin-top: 8px;
   }
   @media (max-width: 768px) {
-    font-size: 1.2em;
-    margin: 2%;
-    &:hover {
-      margin-top: 3%;
-      margin-left: 0%;
-    }
+    font-size: 1.6em;
   }
 }
 

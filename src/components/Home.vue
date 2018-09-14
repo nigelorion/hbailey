@@ -60,7 +60,7 @@
 <script>
 
 export default {
-  name: 'main',
+
   data () {
     return {
       title: 'H.Bailey',
@@ -107,9 +107,11 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: 100%;
   @media (min-width: 1200px) {
     flex-direction: row;
   }
@@ -118,8 +120,11 @@ img {
 .mainCont {
   display: flex;
   margin-top: 25px;
-  @media (max-width: 768px) {
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 658px) {
+    flex-direction: column;
+    width: 100%;
   }
   @media (min-width: 1200px) {
     flex-direction: column;
@@ -137,7 +142,8 @@ img {
   padding: 10px;
   margin: 10px;
   @media (max-width: 768px) {
-    width: 85%;
+    width: 88%;
+    font-size: 1.2em;
   }
   @media (min-width: 1200px) {
     border-top: none;
@@ -154,18 +160,17 @@ img {
   flex-direction: column;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.9);
-}
-
-.right {
-  @media (max-width: 768px) {
+  @media (max-width: 658px) {
+    width: 90%;
+    margin: 2%;
   }
-  background-color: rgba(255, 255, 255, 0.68);
+
+
 }
 
 .right:hover {
   filter: grayscale(80%);
   cursor: pointer;
-
 }
 
 h1, h3, .subP {

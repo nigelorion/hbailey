@@ -42,6 +42,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .textMe {
@@ -75,36 +76,13 @@ export default {
 
 h1 {
   font-weight: normal;
+  margin: 0;
 }
 
 .container {
-  height: 50%;
   display: flex;
-  justify-content: space-around;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
+  flex-wrap: wrap;
 
-}
-
-.socialLinks {
-  height: 20px;
-  filter: opacity(.4);
-  transition: all 200ms;
-  margin: 5px;
-  @media (max-width: 768px) {
-    height: 30px;
-    margin: 10px;
-  }
-  &:hover {
-    filter: opacity(.8);
-    transform: scale(1.1);
-  }
-}
-
-.contain {
-  width: 350px;
-  height: 400px;
 }
 
 .socialContainer {
@@ -112,20 +90,25 @@ h1 {
 }
 
 .contactContainer {
-  height: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 30px;
+  font-size: 1.5em;
 }
 
 .map {
   height: 100%;
+  width: 100%;
 }
 
 .mapContainer {
   margin-bottom: 25px;
+  width: 100%;
+  height: 400px;
+  padding: 5px;
 }
 
 </style>

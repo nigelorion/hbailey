@@ -11,6 +11,7 @@
           </transition>
         </v-touch>
 
+
         <button v-on:click="currentImage--" type="button" name="button" class="btnLeft">&#9001;</button>
         <button v-on:click="currentImage++"type="button" name="button" class="btnRight">&#9002;</button>
 
@@ -53,16 +54,20 @@ export default {
 
 <style lang="scss" scoped>
 
+.main {
+  width: 100%
+}
+
 .gallery {
   display: flex;
   align-items: center;
-  margin: 10%;
-
-
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
   @media (max-width: 800px) {
     flex-direction: column;
-    min-height: 800px;
-    padding-top: 10%;
+    // min-height: 900px;
+    // padding-top: 10%;
   }
 }
 
@@ -74,7 +79,8 @@ export default {
   // width: 500px;
   // height: 500px;
   // padding: 5px;
-  @media (max-width: 800px) {
+  height: 100%;
+  @media (max-width: 900px) {
     width: auto;
     max-height: 200px;
     align-items: flex-start;
@@ -90,15 +96,16 @@ export default {
 
 img {
   object-fit: contain;
-  width: 500px;
-  height: 500px;
-  @media (max-width: 800px) {
-    height: 320px;
-    width: 320px;
-  }
+  max-width: 100%;
+
+  // @media (max-width: 900px) {
+  //   height: 320px;
+  //   width: 320px;
+  // }
 }
 
 .galleryLeft {
+  max-width: 700px;
   position: relative;
 }
 
@@ -109,14 +116,12 @@ img {
   border: none;
   color: rgba(255, 255, 255, 1);
   font-size: 3em;
-  height: 500px;
+  height: 100%;
   transition: all 300ms ease-in-out;;
   &:hover {
-    background-color: rgba(201, 201, 201, 0.47);
+   
     color: rgba(37, 37, 37, 0.82);
-  }
-  @media (max-width: 800px) {
-    height: 320px;
+    transform: scale(1.1)
   }
 }
 
@@ -144,7 +149,7 @@ img {
   &:hover {
     filter: grayscale(0%);
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     width: 37px;
     height: 37px;
   }
