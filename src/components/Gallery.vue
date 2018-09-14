@@ -55,7 +55,10 @@ export default {
 <style lang="scss" scoped>
 
 .main {
-  width: 100%
+  width: 100%;
+  height: 100%;
+  display: flex;
+
 }
 
 .gallery {
@@ -63,7 +66,8 @@ export default {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   @media (max-width: 800px) {
     flex-direction: column;
     // min-height: 900px;
@@ -78,19 +82,14 @@ export default {
   justify-content: center;
   // width: 500px;
   // height: 500px;
-  // padding: 5px;
-  height: 100%;
-  @media (max-width: 900px) {
-    width: auto;
-    max-height: 200px;
-    align-items: flex-start;
-  }
+  padding: 5px;
+  width: 100%;
 }
 
 .galleryText {
   font-size: 1.2em;
-  margin: 10%;
-  width: 400px
+  width: 400px;
+  padding: 10px;
 
 }
 
