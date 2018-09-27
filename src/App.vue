@@ -14,9 +14,9 @@
     </transition>
 
     <footer>
-      <p>H.Bailey 2017 &#169;</p>
-      <a target="_blank" href="https://www.facebook.com/hbailey.menswear/"><img class="socialLinks" src="./assets/facebook.png" alt=""></a>
-      <a target="_blank" href="https://www.instagram.com/hbaileyboutique/"><img  class="socialLinks" src="./assets/insta.png" alt=""></a>
+      <p>H.Bailey 2018 &#169;</p>
+      <a target="_blank" href="https://www.facebook.com/hbailey.menswear/"><img class="socialLinks" src="./assets/facebook.png" alt="H.Bailey Facebook link"></a>
+      <a target="_blank" href="https://www.instagram.com/hbaileyboutique/"><img  class="socialLinks" src="./assets/insta.png" alt="h.Bailey Instagram link"></a>
     </footer>
 
   </div>
@@ -94,23 +94,6 @@ footer {
   }
 }
 
-// nav {
-//   width: 100%;
-//   height: 100px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: black;
-//   z-index: 120;
-//   @media (max-width: 768px) {
-//     flex-direction: row;
-//     justify-content: flex-start;
-//     height: 50px;
-//     width: 100%;
-//     // background-color: rgba(255, 255, 255, 0);
-//   }
-// }
-
 .navBar {
   display: flex;
   justify-content: space-around;
@@ -156,7 +139,7 @@ footer {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.6s
+  transition: opacity 0.3s
 }
 
 .fade-enter, .fade-leave-active {
@@ -164,7 +147,7 @@ footer {
 }
 
 .fade2-enter-active, .fade2-leave-active {
-  transition: opacity 0.6s
+  transition: opacity 0.3s
 }
 
 .fade2-enter, .fade2-leave-active {

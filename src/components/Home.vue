@@ -1,58 +1,39 @@
 <template>
-
   <div class="main">
-
     <div class="mainCont">
-
       <div class="left">
         <h1>{{ title }}</h1>
         <h3>{{ header }}</h3>
         <p class="subP">{{ subHeader }}</p>
       </div>
-
       <div class="right">
         <transition name="fade2" mode="out-in">
           <img v-on:click="lightBoxOpen()" class="imgGallery" :key='faderImage' :src="images[Math.abs(faderImage) % images.length]" alt="Image Fade Gallery">
         </transition>
       </div>
-
       <div v-if="lightBoxActive" class="lightBox">
         <div class="closeDiv" v-on:click="lightBoxClose()">
           <div v-on:click="lightBoxClose()" class="closeBtn"><p>&times;</p></div>
-
         </div>
         <div class="imgBox">
           <v-touch v-on:swipeleft="lightBoxImage--" v-on:swiperight="lightBoxImage++">
             <transition name="fade2" mode="out-in">
               <img :src="images[Math.abs(lightBoxImage) % images.length]" class="lightBoxImages" alt="Light Box Images">
-
             </transition>
           </v-touch>
-
           <button v-on:click="lightBoxImage--" type="button" name="button" class="btnLeft">&#9001;</button>
           <button v-on:click="lightBoxImage++" type="button" name="button" class="btnRight">&#9002;</button>
         </div>
-
       </div>
-
     </div>
-
     <div class="bio">
-
+      <!-- <a href="https://www.king5.com/article/entertainment/television/programs/new-day-northwest/perfect-your-unique-style-with-curated-quality-menswear-from-hbailey/281-581992288 ">king 5 article</a> -->
       <p>I like weathered things.  I like the patina a quality garment develops over time.  Good clothes, like good furniture, have been built to wear well.  That’s  what I sell - quality menswear that’s a little worn.</p>
-
       <p>I see beauty in the mundane and believe deeply that details matter.  Your daily look can bring you joy and inspiration.</p>
-
       <p>At <b>H.Bailey</b> the aim is to help you craft your signature style with contemporary and vintage pieces that are lovingly curated. You’ll find cool denim, vintage sportcoats, and cashmere scarves. From fabulous shoes to dapper designer suits, we’ll get you dressed to show up for your life.</p>
-
       <p>All who want to be handsome are invited to <b>H.Bailey</b> to invest in themselves, in sustainable luxury, in the art of a life lived in style.</p>
-
-      <p>XO,</p>
-
-      <p>H.</p>
-
+      <p>XO, <b>H.</b></p>
     </div>
-
   </div>
 
 </template>
@@ -104,17 +85,11 @@ img {
 
 .main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
- 
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  @media (min-width: 1200px) {
-    flex-direction: row;
-  }
+  flex-direction: column;
 }
 
 .mainCont {
@@ -122,50 +97,53 @@ img {
   margin-top: 25px;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   @media (max-width: 658px) {
     flex-direction: column;
     width: 100%;
   }
-  @media (min-width: 1200px) {
-    flex-direction: column;
-    margin-top: 0px;
-  }
 }
 
 .bio {
-  font-size: 1.1em;
-  width: 460px;
+  font-size: 1.2em;
+  width: 40%;
   text-align: center;
   border-top: solid 1px rgb(191, 167, 112);
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
   margin: 10px;
+  width: 748px;
   @media (max-width: 768px) {
-    width: 88%;
+    width: 100%;
     font-size: 1.2em;
+    padding: 20px;
   }
   @media (min-width: 1200px) {
     border-top: none;
+  }
+  p {
+    padding: 5px;
+  }
+  p:nth-child(even) {
+    background-color: rgb(236, 245, 255);
   }
 }
 
 .left, .right {
   border: solid 2px rgb(191, 167, 112);
-  height: 250px;
-  width: 250px;
+  height: 240px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.9);
+  transition: filter 400ms;
   @media (max-width: 658px) {
     width: 90%;
     margin: 2%;
   }
-
-
 }
 
 .right:hover {
@@ -184,8 +162,6 @@ h1, h3, .subP {
 
 h1 {
   font-size: 3em;
-  @media (max-width: 768px) {
-  }
 }
 
 h3 {
@@ -198,8 +174,6 @@ h3 {
 
 p {
   font-size: 1.1em;
-  @media (max-width: 768px) {
-  }
 }
 
 .socialLinks {
@@ -259,7 +233,6 @@ p {
     background-color: rgba(201, 201, 201, 0.47);
     color: rgba(37, 37, 37, 0.82);
   }
-
 }
 
 .closeDiv {
@@ -272,7 +245,7 @@ p {
 .closeBtn {
   position: absolute;
   top: 80px;
-  right: 10px;
+  right: 80px;
   font-size: 5em;
   color: white;
   z-index: 99;

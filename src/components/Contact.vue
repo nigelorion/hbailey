@@ -3,32 +3,24 @@
     <div class="container">
       <div class="contactContainer">
         <h1>H.Bailey</h1>
-        <p>108 Cherry Street, Suite 1 <br>
-          Seattle, WA 98104</p>
-          <p class="phoneNum">206-351-1595</p>
-          <button class="textMe"><a href="sms:1-206-351-1595">Text me</a>
-    </button>
+        <p>108 Cherry Street, Suite 1 <br> Seattle, WA 98104</p>
+        <p class="phoneNum">206-351-1595</p>
+        <button class="textMe"><a href="sms:1-206-351-1595">Text me</a></button>
         <p>Monday - Saturday 12-7</p>
-
+        <button class="parkingBtn"><a href="https://downtownseattle.org/parking/#!/">Parking</a></button>
+        
       </div>
-
-
       <div class="mapContainer contain">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.1983975898875!2d-122.33630418400797!3d47.602831796230944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab00ce85a13%3A0x42b2cea88c1da9dd!2sGood+Arts+Building!5e0!3m2!1sen!2sus!4v1506739634885" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.2002137685895!2d-122.3361721843696!3d47.60279647918436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab00cb00b97%3A0x223e25bb155d0e73!2sH.Bailey%3A+Curated+Resale!5e0!3m2!1sen!2sus!4v1538001854729" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
       </div>
-
-
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  name: 'main',
   data () {
     return {
-      email: 'testing@gmail.com'
     }
   }
 }
@@ -42,7 +34,24 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
 
+.parkingBtn {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(191, 167, 112);
+  margin: 3px auto;
+  border: none;
+  &:hover {
+    background-color: rgb(193, 193, 193);
+  }
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
 }
 
 .textMe {
@@ -55,12 +64,6 @@ export default {
 
   &:hover {
     background-color: rgb(193, 193, 193);
-  }
-  & a {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 1.2em;
-    text-decoration: none;
   }
   @media (max-width: 768px) {
     display: block;
@@ -82,7 +85,6 @@ h1 {
 .container {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .socialContainer {
