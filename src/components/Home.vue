@@ -219,8 +219,6 @@ p {
       width: 100%;
     }
     .lightBoxImages {
-      // width: 800px;
-      // height: 800px;
       object-fit: contain;
       max-width: 100%;
     }
