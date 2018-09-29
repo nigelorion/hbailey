@@ -215,12 +215,12 @@ p {
     align-items: center;
     width: 75%;
     max-width: 800px;
-    @media (max-width: 768px) {
-      width: 95%;
+    @media(max-width: 650px) {
+      width: 100%;
     }
     .lightBoxImages {
-      width: 800px;
-      height: 800px;
+      // width: 800px;
+      // height: 800px;
       object-fit: contain;
       max-width: 100%;
     }
@@ -252,17 +252,13 @@ p {
 
 .closeBtn {
   position: absolute;
-  top: 80px;
+  top: 40px;
   right: 80px;
   font-size: 5em;
   color: white;
-  z-index: 99;
   p {
     margin: 0;
     padding: 0;
-  }
-  @media (max-width: 768px) {
-    top: 20px;
   }
   transition: all 300ms;
   &:hover {
