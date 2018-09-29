@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Gallery from '@/components/Gallery'
 import Contact from '@/components/Contact'
 import Polices from '@/components/Polices'
+import Press from '@/components/Press'
 
 Vue.use(Router)
 
@@ -13,6 +14,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/press',
+      name: 'press',
+      component: Press
     },
     {
       path: '/gallery',

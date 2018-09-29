@@ -4,6 +4,7 @@
 
     <nav class="navBar" v-if="show">
       <router-link class='links' to="/">Home</router-link>
+      <router-link class='links' to="/press">Press</router-link>
       <router-link class='links' to="/gallery">Gallery</router-link>
       <router-link class='links' to="/polices">Policies</router-link>
       <router-link class='links' to="/contact">Contact</router-link>
@@ -114,7 +115,7 @@ footer {
     color: rgb(191, 167, 112);
   }
   @media (max-width: 768px) {
-    font-size: 1.6em;
+    font-size: 1.1em;
   }
 }
 

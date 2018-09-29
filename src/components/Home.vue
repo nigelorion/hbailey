@@ -34,6 +34,9 @@
       <p>All who want to be handsome are invited to <b>H.Bailey</b> to invest in themselves, in sustainable luxury, in the art of a life lived in style.</p>
       <p>XO, <b>H.</b></p>
     </div>
+ 
+   
+ 
   </div>
 
 </template>
@@ -47,7 +50,7 @@ export default {
       title: 'H.Bailey',
       header: 'CURATED RESALE',
       subHeader: 'menswear for all',
-      images: ['./static/imgs/hilary2.jpg', './static/imgs/windowInside.jpg', './static/imgs/windowSign.jpg', './static/imgs/jackets.jpg', './static/imgs/rings.jpg', './static/imgs/brownJacket.jpg', './static/imgs/blackJacket.jpg', './static/imgs/street.jpg'],
+      images: ['./static/imgs/hilary2.jpg', './static/imgs/dude2.jpg', './static/imgs/windowSign.jpg', './static/imgs/tim.jpg', './static/imgs/person4.jpg', './static/imgs/brownJacket.jpg', './static/imgs/blackJacket.jpg', './static/imgs/street.jpg'],
       faderImage: 0,
       lightBoxImage: 0,
       timer: null,
@@ -104,15 +107,17 @@ img {
   }
 }
 
+
+
 .bio {
   font-size: 1.2em;
-  width: 40%;
   text-align: center;
   border-top: solid 1px rgb(191, 167, 112);
   margin-top: 10px;
   padding: 10px;
   margin: 10px;
   width: 748px;
+
   @media (max-width: 768px) {
     width: 100%;
     font-size: 1.2em;
@@ -125,7 +130,7 @@ img {
     padding: 5px;
   }
   p:nth-child(even) {
-    background-color: rgb(236, 245, 255);
+    background-color: rgb(255, 246, 233);
   }
 }
 
@@ -213,8 +218,11 @@ p {
     @media (max-width: 768px) {
       width: 95%;
     }
-    img {
-      width: 100%;
+    .lightBoxImages {
+      width: 800px;
+      height: 800px;
+      object-fit: contain;
+      max-width: 100%;
     }
   }
 }
