@@ -1,27 +1,27 @@
-# hbailey
+# H.Bailey
 
-> H.Bailey Resale
+H.Bailey is a custom project for a clothing boutique in Seattle. Built with VueJS and hosted on Github Pages. 
 
-## Build Setup
+#### Check it out live at [H.Bailey](https://hbailey.boutique)
 
-``` bash
-# install dependencies
-npm install
+### Tech
 
-# serve with hot reload at localhost:8080
-npm run dev
+H.Bailey uses a number of open source projects to work properly:
 
-# build for production with minification
-npm run build
+* VueJS
+* Vue-Touch
+* Vue-router
 
-# build for production and view the bundle analyzer report
-npm run build --report
+### Installation
 
-# run e2e tests
-npm run e2e
+H.Bailey requires [Node.js](https://nodejs.org/) v4+ to run.
 
-# run all tests
-npm test
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ cd hbailey
+$ npm install
+$ npm run start
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+

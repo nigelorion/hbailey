@@ -37,7 +37,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .link {
@@ -83,7 +82,6 @@ h1 {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .socialContainer {
