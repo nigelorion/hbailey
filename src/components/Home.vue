@@ -13,9 +13,9 @@
       </div>
       <div v-if="lightBoxActive" class="lightBox">
         <div class="closeDiv" v-on:click="lightBoxClose()">
-          <div v-on:click="lightBoxClose()" class="closeBtn"><p>&times;</p></div>
         </div>
         <div class="imgBox">
+          <button v-on:click="lightBoxClose()" class="closeBtn">&times;</button>
           <v-touch v-on:swipeleft="lightBoxImage--" v-on:swiperight="lightBoxImage++">
             <transition name="fade2" mode="out-in">
               <img :src="images[Math.abs(lightBoxImage) % images.length]" class="lightBoxImages" alt="Light Box Images">
@@ -114,14 +114,10 @@ img {
   text-align: center;
   border-top: solid 1px rgb(191, 167, 112);
   margin-top: 10px;
-  padding: 10px;
-  margin: 10px;
   width: 748px;
-
   @media (max-width: 768px) {
     width: 100%;
     font-size: 1.2em;
-    padding: 20px;
   }
   @media (min-width: 1200px) {
     border-top: none;
@@ -250,17 +246,17 @@ p {
 
 .closeBtn {
   position: absolute;
-  top: 40px;
-  right: 80px;
-  font-size: 5em;
+  top: 0;
+  right: 35px;
   color: white;
-  p {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
   transition: all 300ms;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 4em;
+  height: 10px;
   &:hover {
-    transform: scale(1.2);
     color: rgb(106, 106, 106);
   }
 }
