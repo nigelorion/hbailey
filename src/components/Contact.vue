@@ -37,6 +37,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .link {
@@ -82,6 +83,11 @@ h1 {
 
 .container {
   display: flex;
+  flex-direction: column;
+  width: 700px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .socialContainer {
@@ -101,6 +107,11 @@ h1 {
   }
 }
 
+.contain {
+  margin: 0;
+  padding: 0;
+}
+
 .map {
   height: 100%;
   width: 100%;
@@ -110,7 +121,6 @@ h1 {
   margin-bottom: 25px;
   width: 100%;
   height: 400px;
-  padding: 5px;
 }
 
 </style>
