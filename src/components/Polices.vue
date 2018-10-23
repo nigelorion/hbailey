@@ -6,12 +6,6 @@
 
       <p>*All sales are final and our carefully-curated items are sold as presented.  If purchasing a gift, consider choosing accessories or a gift card as a foolproof option.</p>
 
-      <p>*I buy quality/high end/designer menswear by appointment only.  I pay out a little “pocket money”. Text me to inquire.</p>
-
-      <p class="phoneNum">206-351-1595</p>
-
-      <button class="textMe"><a href="sms:1-206-351-1595">Text me</a>
-
 </button>
     </div>
 
@@ -21,15 +15,12 @@
 <script>
 export default {
   data () {
-    return {
-
-    }
+    return {}
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
 .main {
   width: 50%;
   text-align: center;
@@ -69,7 +60,6 @@ export default {
 p {
   font-size: 1.2em;
   border-bottom: solid 1px rgb(191, 167, 112);
-
 }
 
 .wrapper {
@@ -78,5 +68,4 @@ p {
   flex-direction: column;
   font-size: 1.2em;
 }
-
 </style>
