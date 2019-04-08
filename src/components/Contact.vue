@@ -10,7 +10,8 @@
         <div class="btnBox">
           <a class="linkBtn hiddenBtn" href="sms:1-206-351-1595">Text me</a>
         
-          <a class="linkBtn" href="https://downtownseattle.org/parking/#!/">Parking</a>
+          <a class="linkBtn" target="_blank" href="https://downtownseattle.org/parking/#!/">Parking</a>
+          <a class="linkBtn" target="_blank" href="https://squareup.com/gift/4FTYEGX8JC3SN/order">Gift Cards</a>
         </div>
      
       </div>
