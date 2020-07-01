@@ -1,5 +1,20 @@
 <template>
   <div class="main">
+    <div v-if="newsBoxActive" class="newsBox">
+         
+        
+            <button v-on:click="newsBoxClose()" class="closeBtn">&times;</button>
+            <div class="newsBoxinfo">
+              <div class="left2">
+                <h2>Re-opening sale</h2>
+                <p><b>Everything in shop 50% off!</b></p>
+                <h3>By appointment</h3>
+                <p>206-355-9975</p>
+                <a class="linkBtn" href="https://booking.appointy.com/HbaileySea" target="_blank">Schedule</a>
+              </div>
+            </div>
+          
+        </div>
     <div class="mainCont">
       <div class="left">
         <h1>{{ title }}</h1>
@@ -24,6 +39,7 @@
           <button v-on:click="lightBoxImage--" type="button" name="button" class="btnLeft">&#9001;</button>
           <button v-on:click="lightBoxImage++" type="button" name="button" class="btnRight">&#9002;</button>
         </div>
+        
       </div>
     </div>
     <div class="bio">
@@ -54,11 +70,13 @@ export default {
       faderImage: 0,
       lightBoxImage: 0,
       timer: null,
-      lightBoxActive: false
+      lightBoxActive: false,
+      newsBoxActive: true
     }
   },
   mounted: function () {
     this.startRotation()
+    this.newsBoxActive = true
   },
   methods: {
     startRotation: function () {
@@ -74,6 +92,9 @@ export default {
     },
     lightBoxClose: function () {
       this.lightBoxActive = false
+    },
+    newsBoxClose: function () {
+      this.newsBoxActive = false
     }
   }
 }
@@ -221,6 +242,42 @@ p {
   }
 }
 
+.newsBox {
+  z-index: 99;
+  position: absolute;
+ 
+  top: 80px;
+  width: 75vw;
+  height: 75vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // .imgBox {
+  //   z-index: 5;
+  //   position: relative;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 75%;
+  //   max-width: 800px;
+  //   @media(max-width: 650px) {
+  //     width: 100%;
+  //   }
+  //   .lightBoxImages {
+  //     object-fit: contain;
+  //     max-width: 100%;
+  //   }
+  // }
+   @media (max-width: 658px) {
+    width: 100%;
+  }
+}
+
 .btnLeft, .btnRight {
   position: absolute;
   outline: none;
@@ -286,6 +343,46 @@ p {
 
 .fade2-enter, .fade2-leave-active {
   transition: opacity 1s
+}
+
+.newsBoxinfo {
+
+  background-color:rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+
+}
+
+.left2 {
+  border: solid 2px rgb(191, 167, 112);
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: filter 400ms;
+  @media (max-width: 658px) {
+    width: 90%;
+    margin: 2%;
+  }
+}
+
+.linkBtn {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(191, 167, 112);
+  margin: 3px;
+  border: none;
+  padding: 10px;
+  &:hover {
+    background-color: rgb(193, 193, 193);
+  }
 }
 
 </style>

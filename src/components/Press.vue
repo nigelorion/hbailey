@@ -10,7 +10,7 @@
 
     <div class="pressBox">
       <div class="imgBox">
-         <a class="pressImgLink" href="https://www.king5.com/article/entertainment/television/programs/new-day-northwest/perfect-your-unique-style-with-curated-quality-menswear-from-hbailey/281-581992288" target="_blank"><img class="pressImg" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/38891323_315994712474549_7972933583260090368_o.jpg?_nc_cat=110&oh=6083956728c9a9d1d1011c58bbd18bfc&oe=5C1AB2B9" alt="Hilary at H.Bailey"></a>
+         <a class="pressImgLink" href="https://www.king5.com/article/entertainment/television/programs/new-day-northwest/perfect-your-unique-style-with-curated-quality-menswear-from-hbailey/281-581992288" target="_blank"><img class="pressImg" src="static/imgs/H.Bailey.jpg" alt="Hilary at H.Bailey"></a>
       </div>
      
 

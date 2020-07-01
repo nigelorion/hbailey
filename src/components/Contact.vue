@@ -5,10 +5,12 @@
         <h1>H.Bailey</h1>
         <p>108 Cherry Street, Suite 1 <br> Seattle, WA 98104</p>
         <p><a class="link" target="_blank" href="https://goodartsoncherry.com/">Good Arts Building</a> in Pioneer Square.</p>
-        <p>Monday - Saturday 12-7</p>
-        <p class="phoneNum">206-351-1595</p>
+        <p>Tuesday - Saturday 12-5</p>
+        <p><b>By Appointment Only</b></p>
+        <p class="phoneNum">206-355-9975</p>
+        <a class="linkBtn" href="https://booking.appointy.com/HbaileySea" target="_blank">Schedule Appointment</a>
         <div class="btnBox">
-          <a class="linkBtn hiddenBtn" href="sms:1-206-351-1595">Text me</a>
+          <a class="linkBtn hiddenBtn" href="sms:1-206-355-9975">Text me</a>
         
           <a class="linkBtn" target="_blank" href="https://downtownseattle.org/parking/#!/">Parking</a>
           <a class="linkBtn" target="_blank" href="https://squareup.com/gift/4FTYEGX8JC3SN/order">Gift Cards</a>
