@@ -6,7 +6,7 @@
             <button v-on:click="newsBoxClose()" class="closeBtn">&times;</button>
             <div class="newsBoxinfo">
               <div class="left2">
-                <h3>Appointment only, masks required!</h3>
+                <h3>Appointment only.</h3>
                 <p>206-355-9975</p>
                 <a class="linkBtn" href="https://booking.appointy.com/HbaileySea" target="_blank">Schedule</a>
               </div>
