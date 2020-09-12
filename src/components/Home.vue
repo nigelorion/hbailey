@@ -9,6 +9,7 @@
                 <h3>H.Bailey <b>online shop</b> coming soon!</h3>
                 <br>
                 <u><h3>LAST CHANCE to shop the brick and mortar, through Sept. 26th</h3></u>
+                <p>Appointment only.</p>
                 <p>206-355-9975</p>
                 <a class="linkBtn" href="https://booking.appointy.com/HbaileySea" target="_blank">Schedule</a>
               </div>
