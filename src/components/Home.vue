@@ -6,7 +6,9 @@
             <button v-on:click="newsBoxClose()" class="closeBtn">&times;</button>
             <div class="newsBoxinfo">
               <div class="left2">
-                <h3>Appointment only.</h3>
+                <h3>H.Bailey <b>online shop</b> coming soon!</h3>
+                <br>
+                <u><h3>LAST CHANCE to shop the brick and mortar, through Sept. 26th</h3></u>
                 <p>206-355-9975</p>
                 <a class="linkBtn" href="https://booking.appointy.com/HbaileySea" target="_blank">Schedule</a>
               </div>
@@ -364,6 +366,7 @@ p {
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.7);
   transition: filter 400ms;
+  text-align: center;
   @media (max-width: 658px) {
     width: 90%;
     margin: 2%;
