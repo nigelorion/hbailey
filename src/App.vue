@@ -4,10 +4,10 @@
 
     <nav class="navBar" v-if="show">
       <router-link class='links' to="/">Home</router-link>
-      <router-link class='links' to="/press">Press</router-link>
       <router-link class='links' to="/gallery">Gallery</router-link>
-      <router-link class='links' to="/polices">Policies</router-link>
-      <router-link class='links' to="/contact">Contact</router-link>
+      <router-link class='links' to="/press">Press</router-link>
+      <!-- <router-link class='links' to="/polices">Policies</router-link> -->
+      <!-- <router-link class='links' to="/contact">Contact</router-link> -->
     </nav>
 
     <transition name="fade" mode="out-in" appear>
@@ -15,7 +15,7 @@
     </transition>
 
     <footer>
-      <p>H.Bailey 2018 &#169;</p>
+      <p>H.Bailey 2020 &#169;</p>
       <a target="_blank" href="https://www.facebook.com/hbailey.menswear/"><img class="socialLinks" src="./assets/facebook.png" alt="H.Bailey Facebook link"></a>
       <a target="_blank" href="https://www.instagram.com/hbaileyboutique/"><img  class="socialLinks" src="./assets/insta.png" alt="h.Bailey Instagram link"></a>
     </footer>
@@ -97,7 +97,7 @@ footer {
 
 .navBar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 60px;
   background-color: #282f36;
@@ -111,6 +111,7 @@ footer {
   transition: all 400ms;
   font-weight: normal;
   position: relative;
+  margin: 8%;
   &:hover {
     color: rgb(191, 167, 112);
   }

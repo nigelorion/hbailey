@@ -1,12 +1,5 @@
 <template>
   <div class="main">
-    <div class="pressBox">
-      <div class="imgBox">
-        <a class="pressImgLink" href="https://www.seattlemag.com/shopping/seattle%E2%80%99s-new-vintage-clothing-shop-helps-men-suit" target="_blank"><img class="pressImg" src="https://www.seattlemag.com/sites/default/files/field/image/man%20suit.jpg" alt="Hilary at H.Bailey"></a>
-      </div>
-
-      <p class="pressBio">"...Owner Hilary Bailey Burnett...sees menswear as an ideally adaptable style for outfitting all genders.“I wanted to create a calm space with an array of menswear that would be welcoming to all people.”" <br><a href="https://www.seattlemag.com/shopping/seattle%E2%80%99s-new-vintage-clothing-shop-helps-men-suit" target="_blank">Full Seattle Mag article</a></p>
-    </div>
 
     <div class="pressBox">
       <div class="imgBox">
@@ -16,6 +9,16 @@
 
       <p class="pressBio">"Perfect your unique style with curated quality menswear from H.Bailey Looking good isn't about the latest trends, it's about finding items that make you feel and look your best in your own style." <br><a href="https://www.king5.com/article/entertainment/television/programs/new-day-northwest/perfect-your-unique-style-with-curated-quality-menswear-from-hbailey/281-581992288" target="_blank">Full King 5 video</a></p>
     </div>
+    
+    <div class="pressBox">
+      <div class="imgBox">
+        <a class="pressImgLink" href="https://www.seattlemag.com/shopping/seattle%E2%80%99s-new-vintage-clothing-shop-helps-men-suit" target="_blank"><img class="pressImg" src="https://www.seattlemag.com/sites/default/files/field/image/man%20suit.jpg" alt="Hilary at H.Bailey"></a>
+      </div>
+
+      <p class="pressBio">"...Owner Hilary Bailey Burnett...sees menswear as an ideally adaptable style for outfitting all genders.“I wanted to create a calm space with an array of menswear that would be welcoming to all people.”" <br><a href="https://www.seattlemag.com/shopping/seattle%E2%80%99s-new-vintage-clothing-shop-helps-men-suit" target="_blank">Full Seattle Mag article</a></p>
+    </div>
+
+
 
   </div>
 

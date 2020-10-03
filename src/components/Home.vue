@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div v-if="newsBoxActive" class="newsBox">
+    <!-- <div v-if="newsBoxActive" class="newsBox">
          
         
             <button v-on:click="newsBoxClose()" class="closeBtn">&times;</button>
@@ -15,7 +15,7 @@
               </div>
             </div>
           
-        </div>
+        </div> -->
     <div class="mainCont">
       <div class="left">
         <h1>{{ title }}</h1>
@@ -44,12 +44,12 @@
       </div>
     </div>
     <div class="bio">
-      <!-- <a href="https://www.king5.com/article/entertainment/television/programs/new-day-northwest/perfect-your-unique-style-with-curated-quality-menswear-from-hbailey/281-581992288 ">king 5 article</a> -->
-      <p>I like weathered things.  I like the patina a quality garment develops over time.  Good clothes, like good furniture, have been built to wear well.  That’s  what I sell - quality menswear that’s a little worn.</p>
-      <p>I see beauty in the mundane and believe deeply that details matter.  Your daily look can bring you joy and inspiration.</p>
-      <p>At <b>H.Bailey</b> the aim is to help you craft your signature style with contemporary and vintage pieces that are lovingly curated. You’ll find cool denim, vintage sportcoats, and cashmere scarves. From fabulous shoes to dapper designer suits, we’ll get you dressed to show up for your life.</p>
-      <p>All who want to be handsome are invited to <b>H.Bailey</b> to invest in themselves, in sustainable luxury, in the art of a life lived in style.</p>
-      <p>XO, <b>H.</b></p>
+      <p>Once upon a time, I made a destination shop in Seattle’s historic Pioneer Square neighborhood. I curated a beautiful inventory of “menswear for all” that became the raw material for styling magic. So many well-clad souls!CoVID-19 hit my business hard. The repercussions were enough to close the doors on the brick and mortar version of my shop. </p>
+      <p> As Ruth Bader Ginsburg said, "So often in life, things that you regard as an impediment turn out to be great, good fortune."</p>
+      <p>H.Bailey online aspires to bring the soul of the shop to you - I'm now subtitling this adventure, "Vintage and Modern STYLE FOR ALL". We've got denim, scarves, jackets, coats, bags, boots AND homewares. Shopping for treasured wardrobe pieces and chic things for your home is now at hand, and H.Bailey can serve as your new go-to for one-of-a-kind gifts.</p>
+      <p>The aesthetic is always about simplicity, luxury and patina - the way things wear over time is appealing. The mix of modern and vintage goods helps you to craft a personalized style, to elevate your daily life with the details.</p>
+      <p>The Instagram will feature all sorts of juicy style tips, real-life models and inventory highlights. My hope is that it will provide a sense of destination - so we can be connected.</p>
+      <p>The way you shop matters, the daily choices about lifestyle, consumption, and use are important. Join the fun, and shop like you mean it. Let's get some magic started. CoVID-19 hit my business hard. The repercussions were enough to close the doors on the brick and mortar version of my shop.</p>
     </div>
  
    
@@ -93,10 +93,10 @@ export default {
     },
     lightBoxClose: function () {
       this.lightBoxActive = false
-    },
-    newsBoxClose: function () {
-      this.newsBoxActive = false
     }
+    // newsBoxClose: function () {
+    //   this.newsBoxActive = false
+    // }
   }
 }
 
@@ -147,7 +147,7 @@ img {
   p {
     padding: 5px;
   }
-  p:nth-child(even) {
+  p:nth-child(odd) {
     background-color: rgb(255, 246, 233);
   }
 }
