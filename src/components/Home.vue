@@ -44,9 +44,10 @@
       </div>
     </div>
     <div class="bio">
-      <p>Once upon a time, I made a destination shop in Seattle’s historic Pioneer Square neighborhood. I curated a beautiful inventory of “menswear for all” that became the raw material for styling magic. So many well-clad souls!CoVID-19 hit my business hard. The repercussions were enough to close the doors on the brick and mortar version of my shop. </p>
+      <p>Once upon a time, I made a destination shop in Seattle’s historic Pioneer Square neighborhood. I curated a beautiful inventory of “menswear for all” that became the raw material for styling magic. So many well-clad souls!</p>
+      <p>CoVID-19 hit my business hard. The repercussions were enough to close the doors on the brick and mortar version of my shop. </p>
       <p> As Ruth Bader Ginsburg said, "So often in life, things that you regard as an impediment turn out to be great, good fortune."</p>
-      <p>H.Bailey online aspires to bring the soul of the shop to you - I'm now subtitling this adventure, "Vintage and Modern STYLE FOR ALL". We've got denim, scarves, jackets, coats, bags, boots AND homewares. Shopping for treasured wardrobe pieces and chic things for your home is now at hand, and H.Bailey can serve as your new go-to for one-of-a-kind gifts.</p>
+      <p>H.Bailey online aspires to bring the soul of the shop to you - I'm now subtitling this adventure, "Vintage and Modern STYLE FOR ALL". We've got denim, scarves, jackets, coats, bags, boots AND homewares. Shopping for treasured wardrobe pieces and chic things for your home is now at hand, with H.Bailey Online</p>
       <p>The aesthetic is always about simplicity, luxury and patina - the way things wear over time is appealing. The mix of modern and vintage goods helps you to craft a personalized style, to elevate your daily life with the details.</p>
       <p>The Instagram will feature all sorts of juicy style tips, real-life models and inventory highlights. My hope is that it will provide a sense of destination - so we can be connected.</p>
       <p>The way you shop matters, the daily choices about lifestyle, consumption, and use are important. Join the fun, and shop like you mean it. Let's get some magic started. CoVID-19 hit my business hard. The repercussions were enough to close the doors on the brick and mortar version of my shop.</p>
@@ -66,7 +67,7 @@ export default {
     return {
       title: 'H.Bailey',
       header: 'CURATED RESALE',
-      subHeader: 'menswear for all',
+      subHeader: 'Vintage and Modern Style for All',
       images: ['./static/imgs/hilary2.jpg', './static/imgs/dude2.jpg', './static/imgs/windowSign.jpg', './static/imgs/tim.jpg', './static/imgs/person4.jpg', './static/imgs/brownJacket.jpg', './static/imgs/blackJacket.jpg', './static/imgs/street.jpg'],
       faderImage: 0,
       lightBoxImage: 0,
