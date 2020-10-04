@@ -50,7 +50,7 @@
       <p>H.Bailey online aspires to bring the soul of the shop to you - I'm now subtitling this adventure, "Vintage and Modern STYLE FOR ALL". We've got denim, scarves, jackets, coats, bags, boots AND homewares. Shopping for treasured wardrobe pieces and chic things for your home is now at hand, with H.Bailey Online</p>
       <p>The aesthetic is always about simplicity, luxury and patina - the way things wear over time is appealing. The mix of modern and vintage goods helps you to craft a personalized style, to elevate your daily life with the details.</p>
       <p>The Instagram will feature all sorts of juicy style tips, real-life models and inventory highlights. My hope is that it will provide a sense of destination - so we can be connected.</p>
-      <p>The way you shop matters, the daily choices about lifestyle, consumption, and use are important. Join the fun, and shop like you mean it. Let's get some magic started. CoVID-19 hit my business hard. The repercussions were enough to close the doors on the brick and mortar version of my shop.</p>
+      <p>The way you shop matters, the daily choices about lifestyle, consumption, and use are important. Join the fun, and shop like you mean it.</p> <p>Let's get some magic started.</p>
     </div>
  
    
