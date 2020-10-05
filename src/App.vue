@@ -4,10 +4,12 @@
 
     <nav class="navBar" v-if="show">
       <router-link class='links' to="/">Home</router-link>
+      <a class='links' href="https://hbaileyonline.square.site/">Shop</a>
       <router-link class='links' to="/gallery">Gallery</router-link>
       <router-link class='links' to="/press">Press</router-link>
       <!-- <router-link class='links' to="/polices">Policies</router-link> -->
       <!-- <router-link class='links' to="/contact">Contact</router-link> -->
+    
     </nav>
 
     <transition name="fade" mode="out-in" appear>
