@@ -1,21 +1,19 @@
 <template>
   <div class="main">
-    <!-- <div v-if="newsBoxActive" class="newsBox">
+    <div v-if="newsBoxActive" class="newsBox">
          
         
             <button v-on:click="newsBoxClose()" class="closeBtn">&times;</button>
             <div class="newsBoxinfo">
               <div class="left2">
-                <h3>H.Bailey <b>online shop</b> coming soon!</h3>
+                <h3>H.Bailey <b>online shop</b> is here!</h3>
                 <br>
-                <u><h3>LAST CHANCE to shop the brick and mortar, through Sept. 26th</h3></u>
-                <p>Appointment only.</p>
-                <p>206-355-9975</p>
-                <a class="linkBtn" href="https://booking.appointy.com/HbaileySea" target="_blank">Schedule</a>
+    
+                <a class='linkBtn' href="https://hbaileyonline.square.site/">Shop Now!</a>
               </div>
             </div>
           
-        </div> -->
+        </div>
     <div class="mainCont">
       <div class="left">
         <h1>{{ title }}</h1>
@@ -51,6 +49,7 @@
       <p>The aesthetic is always about simplicity, luxury and patina - the way things wear over time is appealing. The mix of modern and vintage goods helps you to craft a personalized style, to elevate your daily life with the details.</p>
       <p>The Instagram will feature all sorts of juicy style tips, real-life models and inventory highlights. My hope is that it will provide a sense of destination - so we can be connected.</p>
       <p>The way you shop matters, the daily choices about lifestyle, consumption, and use are important - shop like you mean it.</p> 
+      <p>- Hilary Bailey Burnett -</p>
     </div>
  
    
