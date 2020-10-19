@@ -6,8 +6,12 @@
             <button v-on:click="newsBoxClose()" class="closeBtn">&times;</button>
             <div class="newsBoxinfo">
               <div class="left2">
-                <h3>H.Bailey <b>online shop</b> is here!</h3>
+                <h3>H.Bailey <b>ONLINE SHOP</b> is here!</h3>
                 <br>
+                                <br>
+
+              
+
     
                 <a class='linkBtn' href="https://hbaileyonline.square.site/">Shop Now!</a>
               </div>
