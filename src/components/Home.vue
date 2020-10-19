@@ -93,10 +93,10 @@ export default {
     },
     lightBoxClose: function () {
       this.lightBoxActive = false
+    },
+    newsBoxClose: function () {
+      this.newsBoxActive = false
     }
-    // newsBoxClose: function () {
-    //   this.newsBoxActive = false
-    // }
   }
 }
 
