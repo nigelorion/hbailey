@@ -14,7 +14,7 @@
     "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
-    "ejs": "^2.7.4",
+    "ejs": "^3.1.7",
     "vue": "^2.6.11",
     "vue-gh-pages": "^1.19.1",
     "vue-router": "^2.7.0",
